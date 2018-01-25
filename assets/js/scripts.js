@@ -29,6 +29,7 @@
     //     $(".page-loader").fadeOut(1000,'swing');
     //  });
 
+
     // MARGIN NEGATIVE DYNAMIC
 
     $( window ).resize(function() {
@@ -119,26 +120,8 @@
          $('.text-container-fluid').css("width", wf_container/2);
 
       }).resize();
-// END RESIZE
+		// END RESIZE
 
-
-		// SLIDER BLOG HOME PAGE
-
-			$('.blog-slider').slick({
-
-			  infinite: true,
-        autoplay: false,
-			  slidesToShow: 1,
-			  slidesToScroll: 1,
-        arrows: false
-			});
-
-      $('.blog-prev').click(function(){
-      $('.blog-slider').slick('slickPrev');
-    });
-      $('.blog-next').click(function(){
-      $('.blog-slider').slick('slickNext');
-    });
 
       // SLIDER PAGE BLOG
 

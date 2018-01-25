@@ -13,6 +13,11 @@
                   <div class="row align-items-center h-100">
                      <h2 class="content-title text-white ubuntu fs-72"><?php the_sub_field('title_part'); ?></h2>
                   </div>
+                  <div class="test">
+                     <p>
+                        test git diff
+                     </p>
+                  </div>
                </div>
             </section>
             <?php
