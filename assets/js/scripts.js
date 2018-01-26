@@ -86,7 +86,9 @@
 		// HOME PAGE PARALLAX
 
 		$(document).ready(function() {
-			$('#fullpage').fullpage();
+			$('#fullpage').fullpage({
+				anchors:['home_part1', 'home_part2', 'home_part3']
+			});
 		});
 
 
