@@ -87,10 +87,28 @@
 
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors:['home_part1', 'home_part2', 'home_part3']
+				anchors:['home_part1', 'home_part2', 'home_part3', 'home_part4'],
+				navigation: true,
+				navigationPosition: 'bottom',
+				navigationTooltips: ['About', 'Webdesign', 'Identité visuelle', 'Video'],
+				showActiveTooltip: true,
+				slidesNavigation: true,
+				slidesNavPosition: 'left'
 			});
 		});
-		
+
+		// test add class active
+		// if ($('#fullpage section').hasClass('active')) {
+      //
+		// 	var $this = $(this);
+		// 	// var $active_anchor = $(this).attr('data-anchor');
+		// }
+		// console.log($this);
+
+
+
+
+
 
 
       /*  CONTAINER FULL WIDTH TEXT GRID */

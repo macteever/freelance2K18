@@ -535,16 +535,33 @@ main{
 	position: relative;
 	list-style-type: none;
 }
-#menu ul li span{
-	border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    height: 4px;
-    width: 4px;
-    border: 0;
-    background: #333;
-    left: 50%;
-    top: 50%;
+#fp-nav{
+	position: fixed;
+	z-index: 100;
+	top: auto!important;
+	bottom: 50px;
+	left: 50px;
+	opacity: 1
+}
+#fp-nav ul li .fp-tooltip{
+	font-size: 18px;
+	font-weight: 700;
+	margin-left: 50px;
+	color: #3D3D3D;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+#fp-nav ul li a span{
+	height: 2px;
+	width: 15px;
+	border-radius: 30%;
+}
+#fp-nav ul li a span:hover, #fp-nav ul li a.active span, #fp-nav ul li a.active span:hover, #fp-nav ul li:hover a span{
+	height: 3px;
+	width: 30px;
+	border-radius: 30%;
+	margin-left: 3px;
 }
 
 /* Page Home */
