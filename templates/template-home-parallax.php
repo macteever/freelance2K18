@@ -1,21 +1,23 @@
 <?php /* Template Name: Home-parallax */
    get_header(); ?>
    <main role="main" class="main-content">
-      <!-- navigation -->   
-      <ul>
-         <?php
-         if( have_rows('home_part') ):
-            while ( have_rows('home_part') ) : the_row();
-            ?>
-            <li data-anchor="<?php the_sub_field('anchor'); ?>">
-               <a href="#<?php the_sub_field('anchor'); ?>">.</a>
-            </li>
+      <!-- navigation -->
+      <div id="menu">
+         <ul>
             <?php
-         endwhile;
-         else :
-         endif;
-         ?>
-      </ul>
+            if( have_rows('home_part') ):
+               while ( have_rows('home_part') ) : the_row();
+               ?>
+               <li data-anchor="<?php the_sub_field('anchor'); ?>" class="">
+                  <a href="#<?php the_sub_field('anchor'); ?>"><span class="anim-300" </span></a>
+               </li>
+               <?php
+            endwhile;
+            else :
+            endif;
+            ?>
+         </ul>
+      </div>
       <!-- navigation -->
       <div id="fullpage">
          <?php

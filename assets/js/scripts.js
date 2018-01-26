@@ -90,6 +90,7 @@
 				anchors:['home_part1', 'home_part2', 'home_part3']
 			});
 		});
+		
 
 
       /*  CONTAINER FULL WIDTH TEXT GRID */
