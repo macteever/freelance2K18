@@ -581,17 +581,27 @@ main{
 	background-color: #3D3D3D;
 	padding: 10px 35px;
 }
-
+.home-loading-bar{
+	height: 2px;
+	width: 5px;
+	background-color: #3D3D3D;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.progressBar{
+	animation-duration: 10s;
+  	animation-name: progressBar;
+}
 /* Home content */
 
-.content-title::after{
+/* .content-title::after{
 	content: '';
 	display: block;
 	width: 40%;
 	height: 2px;
 	background-color: #3d3d3d;
 	margin-top: 15px;
-}
+} */
 
 /* Page Home */
 .home-bkg{
@@ -1145,4 +1155,16 @@ a img.aligncenter {
 	h3 {
 		page-break-after:avoid;
 	}
+}
+
+/*----------------- ANIMATION ------------------*/
+
+@keyframes progressBar {
+  from {
+    width: 5px;
+  }
+
+  to {
+    width: 100%;
+  }
 }
