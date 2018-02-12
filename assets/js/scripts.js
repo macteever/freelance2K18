@@ -4,30 +4,24 @@
 
     // RESIZE HEADER SCROLLTOP
 
-    $(window).scroll(function(){
-      var $header = $('.header');
-			var $menu_section = $('.menu-section');
-      var $logo_img = $('.logo-img');
-      if ($(this).scrollTop() > 40){
-        if(!$header.hasClass('resize-menu') && !$logo_img.hasClass('resize-logo')) {
-            $header.addClass('resize-menu');
-						$menu_section.css({"height": 60});
-            $logo_img.addClass('resize-logo');
-        }
-      }
-      else{
-        if($header.hasClass('resize-menu') || $logo_img.hasClass('resize-logo')) {
-            $header.removeClass('resize-menu');
-            $logo_img.removeClass('resize-logo');
-        }
-      }
-    });
-
-    // PAGE LOADER
-
-    // $(document).ready(function(){
-    //     $(".page-loader").fadeOut(1000,'swing');
-    //  });
+    // $(window).scroll(function(){
+    //   var $header = $('.header');
+		// 	var $menu_section = $('.menu-section');
+    //   var $logo_img = $('.logo-img');
+    //   if ($(this).scrollTop() > 40){
+    //     if(!$header.hasClass('resize-menu') && !$logo_img.hasClass('resize-logo')) {
+    //         $header.addClass('resize-menu');
+		// 				$menu_section.css({"height": 60});
+    //         $logo_img.addClass('resize-logo');
+    //     }
+    //   }
+    //   else{
+    //     if($header.hasClass('resize-menu') || $logo_img.hasClass('resize-logo')) {
+    //         $header.removeClass('resize-menu');
+    //         $logo_img.removeClass('resize-logo');
+    //     }
+    //   }
+    // });
 
 
     // MARGIN NEGATIVE DYNAMIC
@@ -85,32 +79,75 @@
 
 		// HOME PAGE PARALLAX
 
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors:['home_part1', 'home_part2', 'home_part3', 'home_part4'],
-				navigation: true,
-				navigationPosition: 'bottom',
-				navigationTooltips: ['About', 'Webdesign', 'Identité visuelle', 'Video'],
-				showActiveTooltip: true,
-				slidesNavigation: true,
-				slidesNavPosition: 'left'
-			});
-		});
-
-		// test add class active
-		// if ($('#fullpage section').hasClass('active')) {
+		// $(document).ready(function() {
+		// 	$('#fullpage').fullpage({
+		// 		anchors:['home_part1', 'home_part2', 'home_part3', 'home_part4'],
+		// 		navigation: true,
+		// 		navigationPosition: 'right',
+		// 		navigationTooltips: ['About', 'Webdesign', 'Identité visuelle', 'Video'],
+		// 		showActiveTooltip: true,
+		// 		slidesNavigation: true,
+		// 		slidesNavPosition: 'right',
+		// 		//Timer
+		// 		//Scrolling
+		// 		css3: true,
+		// 		scrollingSpeed: 600,
+		// 		autoScrolling: true,
+		// 		fitToSection: true,
+		// 		fitToSectionDelay: 1000,
+		// 		scrollBar: false,
+		// 		easing: 'easeInOutCubic',
+		// 		easingcss3: 'ease',
+		// 		loopBottom: true,
+		// 		loopTop: false,
+		// 		loopHorizontal: true,
+		// 		continuousVertical: true,
+		// 		continuousHorizontal: false,
+		// 		scrollHorizontally: false,
+		// 		interlockedSlides: false,
+		// 		dragAndMove: false,
+		// 		offsetSections: false,
+		// 		resetSliders: false,
+		// 		fadingEffect: true,
+		// 		normalScrollElements: '#element1, .element2',
+		// 		scrollOverflow: false,
+		// 		scrollOverflowReset: false,
+		// 		scrollOverflowOptions: null,
+		// 		touchSensitivity: 15,
+		// 		normalScrollElementTouchThreshold: 5,
+		// 		bigSectionsDestination: null,
       //
-		// 	var $this = $(this);
-		// 	// var $active_anchor = $(this).attr('data-anchor');
-		// }
-		// console.log($this);
+		// 		});
+		// 	});
 
-
-
-
-
-
-
+			$(document).ready(function () {
+			    $('#fullpage').fullpage({
+					 anchors:['home_part1', 'home_part2', 'home_part3', 'home_part4'],
+					  navigation: true,
+					  navigationPosition: 'right',
+					  navigationTooltips: ['About', 'Webdesign', 'Identité visuelle', 'Video'],
+					  showActiveTooltip: true,
+					  slidesNavigation: true,
+					  slidesNavPosition: 'right',
+					  //Timer
+					  //Scrolling
+					  css3: true,
+					  scrollingSpeed: 600,
+					  autoScrolling: true,
+					  fitToSection: true,
+					  fitToSectionDelay: 1000,
+					  scrollBar: false,
+					  easing: 'easeInOutCubic',
+					  easingcss3: 'ease',
+					  touchSensitivity: 15,
+			        loopBottom: true,
+					  afterRender: function(){
+					      setInterval(function(){
+					          $.fn.fullpage.moveSectionDown();
+					      }, 8000);
+					  }
+			    });
+			});
       /*  CONTAINER FULL WIDTH TEXT GRID */
 
          var w_container = $('.container').width();

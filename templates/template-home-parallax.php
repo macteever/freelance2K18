@@ -12,9 +12,13 @@
             while ( have_rows('home_part') ) : the_row();
             ?>
             <section data-anchor="<?php the_sub_field('anchor'); ?>" class="section home-part background anim-300" style="background: url(<?php the_sub_field('bkg_part'); ?>); background-size: cover;">
-               <div class="container h-100">
-                  <div class="row align-items-center h-100">
-                     <h2 class="content-title text-white ubuntu fs-72"><?php the_sub_field('title_part'); ?></h2>
+               <div class="container">
+                  <div class="row align-items-center mw-50">
+                     <h2 class="uppercase content-title ubuntu fs-60 mb-15"><?php the_sub_field('title_part'); ?></h2>
+                     <p class="home-excerpt fs-18 mt-15">
+                        <?php the_sub_field('excerpt'); ?>
+                     </p>
+                     <a class="home-part-cta mt-15 anim-300" href="<?php the_sub_field('link'); ?>">En savoir plus</a>
                   </div>
                </div>
             </section>

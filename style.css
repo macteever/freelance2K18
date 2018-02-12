@@ -238,7 +238,7 @@ strong{
 
 
 .ml-0{margin-left: 0px;}
-.ml-5{margin-left: 5px;}
+.ml-5{margin-left: 5px!important;}
 .ml-10{margin-left: 10px;}
 .ml-15{margin-left: 15px;}
 .ml-20{margin-left: 20px;}
@@ -439,13 +439,33 @@ button.menu-open span {
 	float: left;
 }
 .logo-img {
-	width: 75px;
+	width: 60px;
   height: auto;
-  margin-top: 60px;
+  margin-top: 20px;
+}
+.logo-tagline::before{
+	content: '';
+	display: block;
+	height: 50px;
+	width: 1px;
+	background-color: #3D3D3D;
+	margin-right: 10px;
+	margin-left: 15px;
 }
 /* nav */
 .nav {
 margin-left: auto;
+}
+.large-menu nav ul{
+	display: flex;
+	margin-left: auto;
+}
+.large-menu nav ul li{
+	list-style-type: none;
+	text-transform: uppercase;
+	margin-left: 20px;
+	font-size: 13px;
+	font-weight: 600;
 }
 main{
 	min-height: 80vh;
@@ -461,8 +481,9 @@ main{
 }
 
 #menu-btn{
-	opacity: 1;
-	display: inline-block;
+	/* opacity: 1;
+	display: inline-block; */
+	display: none;
 }
 .menu-section{
 	height: 80px;
@@ -517,51 +538,59 @@ main{
 .home-part{
 	height: 100vh;
 }
-#menu{
-	position: absolute;
-	left: 50px;
-	bottom: 50px;
-	z-index: 4;
-   list-style-type: none;
-}
-#menu ul{
-	display: flex;
-	padding-left: 0px;
-}
-#menu ul li{
-	width: 14px;
-	height: 13px;
-	margin: 7px;
-	position: relative;
-	list-style-type: none;
-}
+/* home navogation */
 #fp-nav{
 	position: fixed;
-	z-index: 100;
-	top: auto!important;
-	bottom: 50px;
-	left: 50px;
-	opacity: 1
+    z-index: 100;
+    top: 50%;
+    right: 50px!important;
+	 margin-top: auto!important;
+    opacity: 1;
 }
 #fp-nav ul li .fp-tooltip{
+	font-family: 'ubuntu';
 	font-size: 18px;
-	font-weight: 700;
-	margin-left: 50px;
-	color: #3D3D3D;
+	margin-right: 20px;
+	color: #FFF;
 	display: flex;
 	align-items: center;
 	height: 100%;
 }
+#fp-nav ul li{
+	height: 25px!important;
+	margin: 0px!important;
+}
+
 #fp-nav ul li a span{
 	height: 2px;
 	width: 15px;
-	border-radius: 30%;
+	border-radius: 0%!important;
+	background-color: #FFF;
 }
 #fp-nav ul li a span:hover, #fp-nav ul li a.active span, #fp-nav ul li a.active span:hover, #fp-nav ul li:hover a span{
 	height: 3px;
 	width: 30px;
-	border-radius: 30%;
-	margin-left: 3px;
+	margin-right: 3px;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span{
+	border-radius: 0%!important;
+}
+.home-part-cta{
+	font-size: 17px;
+	color: #FFF;
+	background-color: #3D3D3D;
+	padding: 10px 35px;
+}
+
+/* Home content */
+
+.content-title::after{
+	content: '';
+	display: block;
+	width: 40%;
+	height: 2px;
+	background-color: #3d3d3d;
+	margin-top: 15px;
 }
 
 /* Page Home */
