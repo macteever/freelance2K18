@@ -1159,6 +1159,7 @@ a img.aligncenter {
 
 /*----------------- ANIMATION ------------------*/
 
+/* Progress Bar */
 @keyframes progressBar {
   from {
     width: 5px;
@@ -1167,4 +1168,27 @@ a img.aligncenter {
   to {
     width: 100%;
   }
+}
+
+/* Animation Home Content*/
+.home-part > .fp-tableCell h2,
+.home-part > .fp-tableCell p {
+	transform: translateY(-85px);
+	opacity: 0;
+	transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity 0.8s ease-in-out;
+}
+
+.home-part.active > .fp-tableCell h2,
+.home-part.active > .fp-tableCell p {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.home-part.active > .fp-tableCell p {
+	transition-delay: .4s;
+}
+
+.home-part.active > .fp-tableCell p + p {
+	transition-delay: .6s;
 }
