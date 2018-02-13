@@ -541,23 +541,24 @@ main{
 /* home navogation */
 #fp-nav{
 	position: fixed;
-    z-index: 100;
-    top: 50%;
-    right: 50px!important;
-	 margin-top: auto!important;
-    opacity: 1;
+   z-index: 100;
+   right: 50px!important;
+   opacity: 1;
+	bottom: 30px!important;
+	top: auto;
+
 }
 #fp-nav ul li .fp-tooltip{
 	font-family: 'ubuntu';
-	font-size: 18px;
-	margin-right: 20px;
+	font-size: 15px;
+	margin-right: 10px;
 	color: #FFF;
 	display: flex;
 	align-items: center;
 	height: 100%;
 }
 #fp-nav ul li{
-	height: 25px!important;
+	height: 22px!important;
 	margin: 0px!important;
 }
 
@@ -1169,7 +1170,28 @@ a img.aligncenter {
     width: 100%;
   }
 }
+/* Animation Home Section */
+.fullpage-wrapper {
+width: 100%!important;
+transform: none!important;
+}
 
+.fp-section {
+width: 100%!important;
+position: absolute;
+left: 0;
+top: 0;
+visibility: hidden;
+opacity: 0;
+z-index: 0;
+transition: all .7s ease-in-out;
+}
+
+.fp-section.active {
+visibility: visible;
+opacity: 1;
+z-index: 1;
+}
 /* Animation Home Content*/
 .home-part > .fp-tableCell h2,
 .home-part > .fp-tableCell p {
@@ -1178,17 +1200,14 @@ a img.aligncenter {
 	transition: transform 0.8s cubic-bezier(0.16, 0.68, 0.43, 0.99),
 				opacity 0.8s ease-in-out;
 }
-
 .home-part.active > .fp-tableCell h2,
 .home-part.active > .fp-tableCell p {
 	transform: translateY(0);
 	opacity: 1;
 }
-
 .home-part.active > .fp-tableCell p {
 	transition-delay: .4s;
 }
-
 .home-part.active > .fp-tableCell p + p {
 	transition-delay: .6s;
 }
