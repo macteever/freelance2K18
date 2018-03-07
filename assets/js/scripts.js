@@ -79,57 +79,19 @@
 
 		// HOME PAGE PARALLAX
 
-		// $(document).ready(function() {
-		// 	$('#fullpage').fullpage({
-		// 		anchors:['home_part1', 'home_part2', 'home_part3', 'home_part4'],
-		// 		navigation: true,
-		// 		navigationPosition: 'right',
-		// 		navigationTooltips: ['About', 'Webdesign', 'Identité visuelle', 'Video'],
-		// 		showActiveTooltip: true,
-		// 		slidesNavigation: true,
-		// 		slidesNavPosition: 'right',
-		// 		//Timer
-		// 		//Scrolling
-		// 		css3: true,
-		// 		scrollingSpeed: 600,
-		// 		autoScrolling: true,
-		// 		fitToSection: true,
-		// 		fitToSectionDelay: 1000,
-		// 		scrollBar: false,
-		// 		easing: 'easeInOutCubic',
-		// 		easingcss3: 'ease',
-		// 		loopBottom: true,
-		// 		loopTop: false,
-		// 		loopHorizontal: true,
-		// 		continuousVertical: true,
-		// 		continuousHorizontal: false,
-		// 		scrollHorizontally: false,
-		// 		interlockedSlides: false,
-		// 		dragAndMove: false,
-		// 		offsetSections: false,
-		// 		resetSliders: false,
-		// 		fadingEffect: true,
-		// 		normalScrollElements: '#element1, .element2',
-		// 		scrollOverflow: false,
-		// 		scrollOverflowReset: false,
-		// 		scrollOverflowOptions: null,
-		// 		touchSensitivity: 15,
-		// 		normalScrollElementTouchThreshold: 5,
-		// 		bigSectionsDestination: null,
-      //
-		// 		});
-		// 	});
-
 			$('#fullpage').fullpage({
 				anchors: ['home_part1', 'home_part2', 'home_part3', 'home_part4'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['About', 'Webdesign', 'Identité visuelle', 'Video'],
+				navigationTooltips: ['Site web', 'Identité visuelle', 'Video | Motion', 'About'],
 				showActiveTooltip: true,
 				slidesNavigation: true,
 				slidesNavPosition: 'right',
 				loopTop: true,
 				loopBottom: true,
+				//Scrolling
+				scrollingSpeed: 800,
+				touchSensitivity: 1000,
 				afterLoad: function(anchorLink, index){
 					var loadedSection = $(this);
 					if(index == 1){
@@ -156,12 +118,12 @@
 						$('.home_part2 .home-loading-bar').removeClass('progressBar');
 						$('.home_part3 .home-loading-bar').removeClass('progressBar');
 					}
-				},
-				afterRender: function(){
-					 setInterval(function(){
-						  $.fn.fullpage.moveSectionDown();
-					 }, 10000);
-				}
+		 		}//,
+				// afterRender: function(){
+				// 	 setInterval(function(){
+				// 		  $.fn.fullpage.moveSectionDown();
+				// 	 }, 15000); // 12500
+				// }
 			});
 
 

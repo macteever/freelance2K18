@@ -1,34 +1,19 @@
 <?php /* Template Name: Contact */ get_header(); ?>
-
 	<main role="main" class="main-content">
-		<div class="container-fluid pl-0 pr-0">
-				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<div class="row no-flex ml-0 mr-0">
-						<div class="text-container-left float-left mt-150 mb-80">
-							<h1 class="fs-48 mt-30 mb-15 contact-title-after"><?php the_title(); ?></h1>
-							<div class="fs-18 fw-300 lh-18 mb-30"><?php the_field('contact_descr'); ?></div>
-							<?php the_content(); ?>
-						</div>
-						<div class="float-left col-xl-6 col-lg-6 col-md-6 col-12 pr-0 contact-map">
-							<div id="map"></div>
-						</div>
+		<div class="container-fluid pl-0 pr-0 dark-grey-bkg">
+			<div class="container">
+				<div class="row no-flex pt-150">
+					<div class="col-xl-5 col-lg-5 col-md-5 col-12">
+						<h1 class="fs-72 mb-150 ls-4 uppercase text-white roboto-slab fw-700"><?php the_title(); ?></h1>
+						<div class="fs-18 ubuntu lh-24 text-white contact-content"><?php the_field('contact_content'); ?></div>
 					</div>
-
-				</article>
-				<!-- /article -->
-			<?php endwhile; ?>
-
-			<?php else: ?>
-				<!-- article -->
-				<article>
-					<h2><?php _e( 'Sorry, nothing to display.', 'starterTheme' ); ?></h2>
-				</article>
-				<!-- /article -->
-			<?php endif; ?>
-		    <script async defer
-		      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYM2FZ6PBFvla3XFMkE6xALHBw2KPY3LY&callback=initMap">
-		    </script>
+					<div class="col-xl-1 col-lg-1 col-md-1 col-12">
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-12">
+						<?php echo do_shortcode('[contact-form-7 id="4" title="Formulaire de contact 1"]'); ?>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 <!-- /container-fluid -->
