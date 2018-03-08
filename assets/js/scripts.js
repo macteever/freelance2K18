@@ -118,12 +118,12 @@
 						$('.home_part2 .home-loading-bar').removeClass('progressBar');
 						$('.home_part3 .home-loading-bar').removeClass('progressBar');
 					}
-		 		}//,
-				// afterRender: function(){
-				// 	 setInterval(function(){
-				// 		  $.fn.fullpage.moveSectionDown();
-				// 	 }, 15000); // 12500
-				// }
+		 		},
+				 afterRender: function(){
+				 	 setInterval(function(){
+				 		  $.fn.fullpage.moveSectionDown();
+				 	 }, 15000); // 15000
+				}
 			});
 
 

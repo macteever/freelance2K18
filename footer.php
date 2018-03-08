@@ -1,25 +1,22 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			<footer class="footer mb-10" role="contentinfo">
 				<div class="container-fluid" id="contact">
-					<div class="row justify-content-around mw-70 mx-auto mb-30">
-							<a href="#" target="blank"><i class="fa fa-facebook-official text-darkgrey fs-28" aria-hidden="true"></i></a>
-							<a href="#" target="blank"><i class="fa fa-instagram text-darkgrey fs-28" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-google-plus text-darkgrey fs-24" aria-hidden="true"></i></a>
-					</div>
+					<div class="row justify-content-between align-items-center">
+						<div>
+							<a href="https://www.facebook.com/webmaster.bordeaux/" target="blank"><i class="fa fa-facebook-official text-darkgrey fs-22 ml-15" aria-hidden="true"></i></a>
+							<a href="https://www.linkedin.com/in/nicolas-metivier-b169a8115/" target="blank"><i class="fa fa-linkedin text-darkgrey fs-22 ml-15" aria-hidden="true"></i></a>
+							<a href="mailto:contact@nicolasmetivier.fr"><i class="fa fa-envelope text-darkgrey fs-22 ml-15" aria-hidden="true"></i></a>
+						</div>
 
-					<div class="row copyright text-darkgrey justify-content-center">
-						<!-- copyright -->
-						<p class="text-darkgrey fs-15">
+						<p class="text-darkgrey fs-15 mb-0">
 							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
 							<a href="/mentions-legales" class="text-darkgrey">-<b> Mentions légales</b></a>
 						</p>
-						<!-- /copyright -->
+						 <img class="logo-footer mr-15" src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaster-bordeaux-nicolas-metivier-backlink-dark.svg" alt="Webmaster création de site internet Webdesign Bordeaux Poitiers Nicolas Métivier">
 					</div>
-
 				</div>
 			</footer>
 			<!-- /footer -->
-
 		</div>
 		<!-- /wrapper -->
 
@@ -33,8 +30,6 @@
 		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-109419102-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
-
 	</body>
 </html>
