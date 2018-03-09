@@ -2,9 +2,9 @@
 	<main role="main" class="main-content">
       <div class="container-fluid light-grey-bkg about-container1">
       </div>
-		<div class="container-fluid about-container2 mb-150">
+		<div class="container-fluid about-container2">
          <div class="container">
-            <div class="row pt-150">
+            <div class="row pt-150 align-items-end mb-30">
                <?php
                   if( have_rows('about_content') ):
                       while ( have_rows('about_content') ) : the_row();
@@ -18,7 +18,7 @@
                          <div class="ubuntu fs-18 lh-24 mb-30">
                             <?php the_sub_field('content'); ?>
                          </div>
-                         <div>
+                         <div class="about-link">
                             <a class="btn-grey" href="<?php the_sub_field('lien'); ?>">Demande de devis</a>
                          </div>
                        </div>

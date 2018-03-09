@@ -1,10 +1,10 @@
 /*
 	Theme Name: Custom Theme
-	Theme URI: https://institut-lips.com
+	Theme URI: https://nicolasmetivier.fr
 	Description: NM  WordPress Theme
 	Version: 1.0
 	Author: NM
-	Author URI: http://nicolasmetivier.fr
+	Author URI: https://nicolasmetivier.fr
 
 	License: Open source
 */
@@ -90,7 +90,6 @@ strong{
 	font-weight: 600;
 }
 
-
 .anim-300{
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
@@ -105,21 +104,23 @@ strong{
 	-o-transition: all 500ms ease-out;
 	transition: all 500ms ease-out;
 }
-	.anim-700{
+.anim-700{
 	-webkit-transition: all 700ms ease-out;
 	-moz-transition: all 700ms ease-out;
 	-ms-transition: all 700ms ease-out;
 	-o-transition: all 700ms ease-out;
 	transition: all 700ms ease-out;
 }
-
- .vertical-center {
+.zi-9{z-index: 9;}
+.zi-99{z-index: 99;}
+.zi-999{z-index: 999;}
+ /* .vertical-center {
 	 display: flex;
 	 display: -webkit-flex;
 	 align-items: center;
 	 height: 100%;
 	 padding: 0;
- }
+ } */
 
 
  .fs-8{font-size: 8px;}
@@ -163,8 +164,9 @@ strong{
 .text-black{color: #444;}
 .text-grey{color: #757575;}
 .text-darkgrey{color: #3D3D3D;}
+.text-gold{color: #D0B88B};
 
-.dark-grey-bkg{background-color: #313131;}
+.dark-grey-bkg{background-color: #313131!important;}
 .light-grey-bkg{background-color: #EAEAEA;}
 
 .mw-30{max-width: 30%;}
@@ -189,6 +191,9 @@ strong{
 .ls-4{letter-spacing: 4px;}
 .ls-5{letter-spacing: 5px;}
 .ls-6{letter-spacing: 6px;}
+.ls-8{letter-spacing: 8px;}
+.ls-10{letter-spacing: 10px;}
+.ls-12{letter-spacing: 12px;}
 
 .fw-300{font-weight: 300;}
 .fw-400{font-weight: 400;}
@@ -479,7 +484,7 @@ margin-left: auto;
 	font-weight: 600;
 }
 main{
-	min-height: 80vh;
+	min-height: calc(100vh - 40px);
 }
 .main-navigation-zone  ul li{
 	list-style: none;
@@ -695,8 +700,40 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 	width: 620px;
 	margin-left: -200px;
 }
-
+.about-container2 .about-link{
+	display: block;
+    margin-left: auto;
+    width: 160px;
+}
+/** PAGE LOGO **/
+.identite-visuelle h1{
+	margin-bottom: 30px!important;
+}
+.identite-visuelle .logo-intro::after{
+	content: '';
+	width: 3px;
+	height: 380px;
+	background-color: #757575;
+	display: inline;
+	position: absolute;
+}
+.identite-visuelle .logo-content h2::before{
+	content: '';
+	width: 250px;
+	height: 3px;
+	background-color: #757575;
+	display: inline;
+	position: absolute;
+	bottom: 15px;
+   left: -60%;
+}
+.identite-visuelle .logo-content h2{
+	transform: translateX(60%);
+}
 /** PAGE CONTACT **/
+.contact-container{
+	background-color: #313131;
+}
 .page-template-template-contact .menu-container, .page-template-template-contact .large-menu nav ul li a{
 	color: #FFF!important
 }
@@ -746,10 +783,6 @@ textarea{
 	color: #FFF;
 }
 /* FOOTER */
-
-.contact .footer{
-	margin-top: 135px;
-}
 .logo-footer{
 	width: 150px;
 }

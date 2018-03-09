@@ -1,6 +1,6 @@
 <?php /* Template Name: Contact */ get_header(); ?>
 	<main role="main" class="main-content">
-		<div class="container-fluid pl-0 pr-0 dark-grey-bkg">
+		<div class="container-fluid pl-0 pr-0 contact-container">
 			<div class="container">
 				<div class="row no-flex pt-150">
 					<div class="col-xl-5 col-lg-5 col-md-5 col-12">
