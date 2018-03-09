@@ -157,7 +157,7 @@ strong{
 	font-size: 16px;
 	color: white;
 	background-color: #3D3D3D;
-	padding: 10px;
+	padding: 10px 20px;
 }
 
 .text-white{color: #FFF;}
@@ -246,6 +246,7 @@ strong{
 .mb-130{margin-bottom: 130px;}
 .mb-140{margin-bottom: 140px;}
 .mb-150{margin-bottom: 150px;}
+.mb-250{margin-bottom: 250px;}
 .mb-350{margin-bottom: 350px;}
 
 
@@ -716,6 +717,7 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 	background-color: #757575;
 	display: inline;
 	position: absolute;
+	right: -20px;
 }
 .identite-visuelle .logo-content h2::before{
 	content: '';
@@ -729,6 +731,21 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 }
 .identite-visuelle .logo-content h2{
 	transform: translateX(60%);
+}
+/* partie projets */
+.identite-visuelle .logo-projets img{
+	position: absolute;
+	left: -30px;
+}
+.identite-visuelle .link-category-logo::before{
+	content: '';
+	width: 80px;
+	height: 2px;
+	background-color: #313131;
+	display: inline-block;
+	margin-right: 15px;
+
+
 }
 /** PAGE CONTACT **/
 .contact-container{

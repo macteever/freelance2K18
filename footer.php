@@ -8,7 +8,7 @@
 							<a href="mailto:contact@nicolasmetivier.fr"><i class="fa fa-envelope text-darkgrey fs-22 ml-15" aria-hidden="true"></i></a>
 						</div>
 
-						<p class="text-darkgrey fs-15 mb-0">
+						<p class="text-darkgrey fs-14 ubuntu fw-300 ls-1 mb-0">
 							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
 							<a href="/mentions-legales" class="text-darkgrey">-<b> Mentions légales</b></a>
 						</p>
