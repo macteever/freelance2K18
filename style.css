@@ -142,6 +142,7 @@ strong{
  .fs-30{font-size: 30px;}
  .fs-36{font-size: 36px;}
  .fs-40{font-size: 40px;}
+ .fs-42{font-size: 42px;}
  .fs-44{font-size: 44px;}
  .fs-48{font-size: 48px;}
  .fs-52{font-size: 52px;}
@@ -707,7 +708,48 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 .about-container2 .about-link{
 	display: block;
     margin-left: auto;
-    width: 160px;
+    width: 180px;
+}
+/** PAGE SITE INTERNET **/
+
+.creation-de-site-web .web-intro::after{
+	content: '';
+	width: 3px;
+	height: 444px;
+	background-color: #757575;
+	display: inline;
+	position: absolute;
+	right: 0px;
+	top: 20px;
+}
+ul#menu-web-submenu {
+    display: flex;
+}
+ul#menu-web-submenu li{
+	list-style-type: none;
+	margin: 0px 30px;
+}
+ul#menu-web-submenu li a{
+	font-family: 'roboto';
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 600;
+}
+.web-first-part{
+	transform: translateY(-50px);
+	margin-left: -30px;
+}
+.web-first-part img{
+	position: absolute;
+    top: -20px;
+    max-width: 300px;
+    right: -330px;
+}
+.web-first-part-content{
+	background-color: #EEEEEE;
+	padding: 30px 50px;
+	border-right: solid 5px #9C9C9C;
 }
 /** PAGE LOGO **/
 .identite-visuelle h1{
@@ -778,6 +820,7 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 /** PAGE CONTACT **/
 .contact-container{
 	background-color: #313131;
+	min-height: 60vh;
 }
 .page-template-template-contact .menu-container, .page-template-template-contact .large-menu nav ul li a{
 	color: #FFF!important
@@ -932,41 +975,17 @@ textarea{
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
-.gotham-b{
-	font-family: 'Gotham Book';
-}
-.gotham-li{
-	font-family: 'Gotham Light Italic'
-}
+
 .ubuntu{
 font-family: 'Ubuntu', sans-serif;
 }
 .roboto-slab{
 	font-family: 'Roboto Slab', serif;
 }
-
-
-@font-face {
-	font-family: 'Gotham Light Italic';
-	src: url('assets/fonts/Gotham-LightItalic.eot');
-	src: url('assets/fonts/Gotham-LightItalic.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/Gotham-LightItalic.woff') format('woff'),
-		url('assets/fonts/Gotham-LightItalic.ttf') format('truetype'),
-		url('assets/fonts/Gotham-LightItalic.svg#Gotham-LightItalic') format('svg');
-	font-weight: 300;
-	font-style: italic;
+.roboto{
+	font-family: 'Roboto', sans-serif;
 }
 
-@font-face {
-	font-family: 'Gotham Book';
-	src: url('assets/fonts/Gotham-Book.eot');
-	src: url('assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
-		url('assets/fonts/Gotham-Book.woff') format('woff'),
-		url('assets/fonts/Gotham-Book.ttf') format('truetype'),
-		url('assets/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
 
 /*------------------------------------*\

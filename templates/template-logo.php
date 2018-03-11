@@ -4,7 +4,7 @@
       if( have_rows('logo_top_page') ):
           while ( have_rows('logo_top_page') ) : the_row();
           ?>
-          <div class="container-fluid pt-150" style="background: url(<?php the_sub_field('background'); ?>); background-size: cover; background-position: right;">
+          <div class="container-fluid pt-150 out" style="background: url(<?php the_sub_field('background'); ?>); background-size: cover; background-position: right;">
              <div class="container">
                 <div class="row mt-80">
                    <div class="col-xl-1 col-lg-1 col-md-1 col-12 logo-intro"></div>

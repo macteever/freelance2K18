@@ -26,11 +26,11 @@
 
     // MARGIN NEGATIVE DYNAMIC
 
-    $( window ).resize(function() {
-        var marg_neg = $('.p-b-80').height() + $('.test-slider').height() + $('.img-slider').height();
-
-        $('#tarifs').css('margin-top', -marg_neg);
-    });
+    // $( window ).resize(function() {
+    //     var marg_neg = $('.p-b-80').height() + $('.test-slider').height() + $('.img-slider').height();
+    //
+    //     $('#tarifs').css('margin-top', -marg_neg);
+    // });
 
 
     // MENU BURGER
@@ -126,11 +126,18 @@
 				}
 			});
 
+		/* BLUR EFFECT BACKGROUND */
+
+		$(window).on('scroll', function () {
+		    var pixs = $(document).scrollTop()
+		    pixs = pixs / 100;
+		    $(".out").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)" })
+		});
 
       /*  CONTAINER FULL WIDTH TEXT GRID */
 
          var w_container = $('.container').width();
-         var w_window =$( window ).width();
+         var w_window = $( window ).width();
          $('.text-container').css("width", w_container/2);
          $('.text-container-left').css("width", w_container/2);
          $('.text-container-left').css("margin-left",(w_window - w_container)/2);

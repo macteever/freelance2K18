@@ -6,8 +6,8 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Webmaster création de site internet Webdesign Bordeaux Poitiers Nicolas Métivier" class="anim-300 logo-img">
             </a>
             <div class="logo-tagline ml-5">
-               <p class="ubuntu fs-17 ml-15 mb-0"><strong>Nicolas</strong></p>
-               <p class="ubuntu fs-17 ml-15 mb-0"><strong class="fw-300">Métivier</strong></p>
+               <p class="ubuntu fs-15 ml-15 mb-0"><strong>Création de site internet</strong></p>
+               <p class="ubuntu fs-15 ml-15 mb-0"><strong class="fw-300">Bordeaux | Poitiers</strong></p>
             </div>
 
           </div>
