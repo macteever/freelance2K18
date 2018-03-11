@@ -166,6 +166,11 @@
       }).resize();
 		// END RESIZE
 
+		// SLIDER PAGE SITE WEB
+
+		$('.web-slider').slick({
+		  infinite: true,
+		});
 
       // SLIDER PAGE BLOG
 

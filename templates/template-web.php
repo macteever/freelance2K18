@@ -19,7 +19,7 @@
           </div>
           <div class="container-fluid">
              <div class="container">
-                <div class="row pt-40">
+                <div class="row align-items-center pt-40">
                    <div class="col-xl-1 col-lg-1 col-md-1 col-12"></div>
                    <div class="col pl-50">
                       <a class="btn-grey" href="<?php the_sub_field('lien'); ?>">Demande de devis</a>
@@ -37,7 +37,7 @@
          else :
          endif;
          ?>
-			<div class="container-fluid">
+			<div class="container-fluid o-hidden">
 				<?php
 		         if( have_rows('web_first_part') ):
 		          while ( have_rows('web_first_part') ) : the_row();
@@ -59,12 +59,51 @@
 		          endif;
 	          ?>
 				 <div class="container">
-					<div class="row">
-						<div class="ml-auto col-xl-11 col-lg-11 col-md-1 col-12 pl-0">
+					<div class="row mb-100">
+						<div class="ml-auto col-xl-11 col-lg-11 col-md-1 col-12 pl-0 web-etapes-title">
 							<h3 class="roboto fs-42 fw-500 ls-10 uppercase">Les étapes</h3>
 						</div>
 					</div>
 				 </div>
+				 <?php
+ 		         if( have_rows('web_slide_container') ):
+ 		          while ( have_rows('web_slide_container') ) : the_row();
+ 		          ?>
+					 <div class="row web-slide-container">
+						 <div class="text-container-left d-flex">
+							 <span class="roboto-slab fw-700 fs-180 text-gold"><?php the_sub_field('number'); ?></span>
+							 <h3 class="roboto fw-500 fs-100 ls-20 text-light-grey uppercase"><?php the_sub_field('title'); ?></h3>
+						 </div>
+					 </div>
+					 <div class="web-slider">
+					 <?php
+	 		         if( have_rows('web_slider_content') ):
+	 		          while ( have_rows('web_slider_content') ) : the_row();
+	 		          ?>
+							 <div class="row">
+								 <div class="col-xl-6 col-lg-6 col-md-6 col-12 float-left">
+									 <img src="<?php the_sub_field('img'); ?>" />
+								 </div>
+								 <div class="col-xl-6 col-lg-6 col-md-6 col-12 float-left">
+									 <div class="text-container">
+										 <h3 class="roboto-slab fs-36 fw-700 ls-6"><?php the_sub_field('subtitle'); ?></h3>
+										 <div class="ubuntu fs-18 lh-24 web-slider-content">
+											 <?php the_sub_field('content'); ?>
+										 </div>
+									 </div>
+								 </div>
+							 </div>
+						 <?php
+			          endwhile;
+			          else :
+			          endif;
+		          ?>
+				 	 </div>
+					 <?php
+		          endwhile;
+		          else :
+		          endif;
+	          ?>
 			</div>
 	</main>
 <!-- /container-fluid -->
