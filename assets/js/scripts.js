@@ -143,6 +143,10 @@
          $('.text-container-left').css("margin-left",(w_window - w_container)/2);
          $('.text-container-left-p').css("padding-left",(w_window - w_container)/2);
 
+			$('.text-container4').css('width', w_container/3);
+		   $('.text-container4-left').css("width", w_container/3);
+		   $('.text-container4-left').css("margin-left",(w_window - w_container)/2);
+
 			$('.text-container7').css('width', w_container/1.714);
 		   $('.text-container7-left').css("width", w_container/1.714);
 		   $('.text-container7-left').css("margin-left",(w_window - w_container)/2);

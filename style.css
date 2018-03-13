@@ -766,7 +766,7 @@ ul#menu-web-submenu li a{
 .web-slider-container span{
 	line-height: 165px;
 }
-.web-slider-container h3{
+.web-slider-container .web-slider-title h3{
 	color: rgba(49,49,49,0.20);
 }
 .web-slider-container span::before{
@@ -778,11 +778,17 @@ ul#menu-web-submenu li a{
 	position: relative;
 	top: 90px;
 }
+.web-slider-title{
+	margin-bottom: -50px;
+}
 .web-slider h3{
 	padding-left: 60px;
 }
 .web-slider img{
 	width: 100%;
+}
+.content-web-slider{
+	margin-left: -80px;
 }
 .web-slider-content{
 	background-color: #EEEEEE;
