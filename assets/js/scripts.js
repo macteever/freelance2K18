@@ -143,22 +143,13 @@
          $('.text-container-left').css("margin-left",(w_window - w_container)/2);
          $('.text-container-left-p').css("padding-left",(w_window - w_container)/2);
 
-         $('.text-container4').css('width', w_container/3);
-         $('.text-container4-left').css("width", w_container/3);
-         $('.text-container4-left').css("margin-left",(w_window - w_container)/2);
+			$('.text-container7').css('width', w_container/1.714);
+		   $('.text-container7-left').css("width", w_container/1.714);
+		   $('.text-container7-left').css("margin-left",(w_window - w_container)/2);
 
-         $('.text-container5').css('width', w_container/2.4);
-         $('.text-container5-left').css("width", w_container/2.4);
-         $('.text-container5-left').css("margin-left",(w_window - w_container)/2);
-
-          $('.text-container5-5').css('width', w_container/2.18);
-         $('.text-container5-5-left').css("width", w_container/2.18);
-         $('.text-container5-5-left').css("margin-left",(w_window - w_container)/2);
-
-         $('.text-container4-padding').css('width', w_container/3);
-         $('.text-container4-left-padding').css("width", (w_container/3) + (w_window - w_container)/2);
-         $('.text-container4-left-padding').css("padding-left",(w_window - w_container)/2);
-
+			$('.text-container8').css('width', w_container/1.5);
+		   $('.text-container8-left').css("width", w_container/1.5);
+		   $('.text-container8-left').css("margin-left",(w_window - w_container)/2);
 
          var wf_container = $('.container-fluid').width();
          $('.text-container-fluid').css("width", wf_container/2);
@@ -168,9 +159,8 @@
 
 		// SLIDER PAGE SITE WEB
 
-		$('.web-slider').slick({
-		  infinite: true,
-		});
+		$('.content-web-slider').slick();
+		$('.img-web-slider').slick();
 
       // SLIDER PAGE BLOG
 

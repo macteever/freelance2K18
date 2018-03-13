@@ -12,6 +12,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<?php wp_head(); ?>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 		<script>
         // conditionizr.com
         // configure environment tests
@@ -26,19 +27,15 @@
 		<div class="page-loader">
 			<!-- <img class="m-l-auto m-r-auto" src="<?=get_template_directory_uri().'/assets/img/logo.svg'?>" alt="coach sportif sportiforme à domicile Poitiers"> -->
 		</div>
-
 		<!-- wrapper -->
 		<div class="wrapper">
-
 			<!-- header -->
 			<header class="header anim-300 clear" role="banner">
-
 				<!-- nav -->
 				<div class="container-fluid menu-container anim-300">
-                    <?php require 'includes/header-left.php'; ?>
-                </div>
+                 <?php require 'includes/header-left.php'; ?>
+            </div>
 				<!-- /nav -->
-
 			</header>
 			<!-- /header -->
 			<nav class="nav-mobile" role="navigation">

@@ -13,7 +13,7 @@
              type="video/ogg">
            Votre navigateur ne permet pas de lire les vidéos HTML5.
          </video>
-         <div class="container pt-150 mb-100 zi-9">
+         <div class="container pt-150 zi-9">
             <div class="row">
                <div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto video-headlines">
                   <h1 class="roboto-slab fs-72 fw-700 ls-1"><?php the_title(); ?></h1>
@@ -23,7 +23,7 @@
                </div>
             </div>
          </div>
-         <div class="container">
+         <div class="container video-content-container">
             <?php
             if( have_rows('video_content') ):
                 while ( have_rows('video_content') ) : the_row();
