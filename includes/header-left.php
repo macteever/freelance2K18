@@ -5,7 +5,7 @@
             <a href="<?php echo home_url(); ?>">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Webmaster création de site internet Webdesign Bordeaux Poitiers Nicolas Métivier" class="anim-300 logo-img">
             </a>
-            <div class="logo-tagline ml-5">
+            <div class="logo-tagline ml-5 anim-300">
                <p class="ubuntu fs-15 ml-15 mb-0"><strong>Création de site internet</strong></p>
                <p class="ubuntu fs-15 ml-15 mb-0"><strong class="fw-300">Bordeaux | Poitiers</strong></p>
             </div>
@@ -13,7 +13,7 @@
           </div>
         <!-- /logo -->
     </div>
-    <div class="col-xl-9 col-lg-9 col-9 anim-300 large-menu pr-15 text-right">
+    <div class="col-xl-9 col-lg-9 col-9 anim-300 large-menu pr-15 text-right anim-300">
       <nav class="d-flex">
          <?php  customTheme_nav(); ?>
          <div id="menu-btn">

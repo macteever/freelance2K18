@@ -2,35 +2,34 @@
 
 		$(document).ready(function(){
 
-    // RESIZE HEADER SCROLLTOP
+   // RESIZE HEADER SCROLLTOP
 
-    // $(window).scroll(function(){
-    //   var $header = $('.header');
-		// 	var $menu_section = $('.menu-section');
-    //   var $logo_img = $('.logo-img');
-    //   if ($(this).scrollTop() > 40){
-    //     if(!$header.hasClass('resize-menu') && !$logo_img.hasClass('resize-logo')) {
-    //         $header.addClass('resize-menu');
-		// 				$menu_section.css({"height": 60});
-    //         $logo_img.addClass('resize-logo');
-    //     }
-    //   }
-    //   else{
-    //     if($header.hasClass('resize-menu') || $logo_img.hasClass('resize-logo')) {
-    //         $header.removeClass('resize-menu');
-    //         $logo_img.removeClass('resize-logo');
-    //     }
-    //   }
-    // });
+    $(window).scroll(function(){
+      var $header = $('.header');
+			var $menu_section = $('.large-menu, .logo-tagline');
+      if ($(this).scrollTop() > 80){
+				$menu_section.css({"-webkit-transform":"translateY(-80px)"});
+      }
+      else{
+				$menu_section.css({"-webkit-transform":"translateY(0px)"});
+      }
+    });
 
+	 // FIXED WEB PAGE submenu
+	 $(window).scroll(function(){
+		var $subMenu_web = $('.web-submenu-container');
 
-    // MARGIN NEGATIVE DYNAMIC
-
-    // $( window ).resize(function() {
-    //     var marg_neg = $('.p-b-80').height() + $('.test-slider').height() + $('.img-slider').height();
-    //
-    //     $('#tarifs').css('margin-top', -marg_neg);
-    // });
+      if ($(this).scrollTop() > 568){
+			if (!$($subMenu_web.hasClass('submenu-fixed'))) {
+				$subMenu_web.addClass('submenu-fixed');
+			}
+      }
+      else{
+			if($($subMenu_web.hasClass('submenu-fixed'))) {
+				$subMenu_web.removeClass('submenu-fixed');
+			}
+      }
+    });
 
 
     // MENU BURGER
@@ -151,20 +150,34 @@
 		   $('.text-container7-left').css("width", w_container/1.714);
 		   $('.text-container7-left').css("margin-left",(w_window - w_container)/2);
 
-			$('.text-container8').css('width', w_container/1.5);
-		   $('.text-container8-left').css("width", w_container/1.5);
-		   $('.text-container8-left').css("margin-left",(w_window - w_container)/2);
-
          var wf_container = $('.container-fluid').width();
          $('.text-container-fluid').css("width", wf_container/2);
 
       }).resize();
 		// END RESIZE
 
-		// SLIDER PAGE SITE WEB
+		// SLICK SLIDER PAGE SITE WEB
 
-		$('.content-web-slider').slick();
-		$('.img-web-slider').slick();
+		$('.content-web-slider').slick({
+			arrows: false,
+			dots: false,
+			fade: true
+		});
+		$('.img-web-slider').slick({
+			arrows: false,
+			dots: false
+		});
+
+		// CONTROL FIRST SLIDE WEBPAGE
+		$('.web-left-arrow').click(function(){
+		$('.WEBDESIGN .content-web-slider, .WEBDESIGN .img-web-slider').slick('slickPrev');
+	 	});
+		$('.web-right-arrow').click(function(){
+		$('.WEBDESIGN .content-web-slider, .WEBDESIGN .img-web-slider').slick('slickNext');
+	 	});
+
+		// INSERT DOTS
+		$( "<ul class='web-slider-dots'><li class='fs-12 roboto'>UX design</li><li class='roboto fs-12'>Responsive</li></ul>" ).insertAfter( ".content-web-slider" );
 
       // SLIDER PAGE BLOG
 
