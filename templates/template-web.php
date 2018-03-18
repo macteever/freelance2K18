@@ -4,13 +4,13 @@
 	if( have_rows('web_top_page') ):
 		while ( have_rows('web_top_page') ) : the_row();
 		?>
-		<div class="container-fluid pt-150" style="background: url(<?php the_sub_field('background'); ?>); background-size: cover; background-position: right;">
+		<div class="container-fluid pt-150 anim-300" style="background: url(<?php the_sub_field('background'); ?>); background-size: cover; background-position: right;">
 			<div class="container">
 				<div class="row mt-80">
 					<div class="col-xl-1 col-lg-1 col-md-1 col-12 web-intro"></div>
 					<div class="col-xl-8 col-lg-8 col-md-8 col-12 pl-50 ">
-						<h1 class="roboto-slab fs-72 fw-700 mt-0 text-light-grey"><?php the_sub_field('title'); ?></h1>
-						<div class="ubuntu fs-18 lh-24 mb-40 text-light-grey">
+						<h1 class="roboto-slab fs-72 fw-700 mt-0 mb-50 text-light-grey"><?php the_sub_field('title'); ?></h1>
+						<div class="ubuntu fs-18 lh-24 mb-50 text-light-grey">
 							<?php the_sub_field('headline'); ?>
 						</div>
 					</div>
@@ -37,12 +37,12 @@
 	else :
 	endif;
 	?>
-	<div class="container-fluid o-hidden pl-0 pr-0">
+	<div class="container-fluid o-hidden pl-0 pr-0 anim-300">
 		<?php
 		if( have_rows('web_first_part') ):
 			while ( have_rows('web_first_part') ) : the_row();
 			?>
-			<div class="row mt-100 align-items-end">
+			<div class="row mt-100 align-items-end anim-300">
 				<div class="col-xl-4 col-lg-4 col-md-4">
 					<img src="<?php the_sub_field('img'); ?>" alt=""/>
 				</div>
@@ -61,7 +61,7 @@
 		endif;
 		?>
 		<div class="container">
-			<div class="row mb-100">
+			<div class="row">
 				<div class="ml-auto col-xl-11 col-lg-11 col-md-1 col-12 pl-0 web-etapes-title">
 					<h3 class="roboto fs-42 fw-500 ls-10 uppercase">Les étapes</h3>
 				</div>

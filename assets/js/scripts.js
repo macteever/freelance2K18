@@ -16,21 +16,20 @@
     });
 
 	 // FIXED WEB PAGE submenu
-	 $(window).scroll(function(){
-		var $subMenu_web = $('.web-submenu-container');
-
-      if ($(this).scrollTop() > 568){
-			if (!$($subMenu_web.hasClass('submenu-fixed'))) {
-				$subMenu_web.addClass('submenu-fixed');
-			}
-      }
-      else{
-			if($($subMenu_web.hasClass('submenu-fixed'))) {
-				$subMenu_web.removeClass('submenu-fixed');
-			}
-      }
-    });
-
+	 
+	 $(window).scroll(function() {
+	    var $scroll = $(window).scrollTop();
+	    if ($scroll > 590) {
+			 if (!$('.web-submenu-container').hasClass('submenu-fixed')) {
+				 $(".web-submenu-container").addClass("submenu-fixed");
+			 }
+	    }
+		 else {
+			 if($('.web-submenu-container').hasClass('submenu-fixed')) {
+				 $('.web-submenu-container').removeClass('submenu-fixed');
+			 }
+		 }
+	 });
 
     // MENU BURGER
       // Object variables for event handlers

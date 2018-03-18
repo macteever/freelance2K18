@@ -716,7 +716,9 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
     width: 180px;
 }
 /** PAGE SITE INTERNET **/
-
+.page-template-template-web .logo-tagline, .page-template-template-web .large-menu nav ul li a{
+	color: #FFF;
+}
 .creation-de-site-web .web-intro::after{
 	content: '';
 	width: 3px;
@@ -729,9 +731,20 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 }
 .submenu-fixed{
 	position: fixed;
-	z-index: 99999999;
+	z-index: 99999;
 	top: 0px;
 	background-color: #FFFFFF;
+	border-bottom: solid 1px #eaeaea;
+}
+.submenu-fixed .web-submenu-row{
+	padding: 15px 0px;
+}
+.submenu-fixed .web-submenu-row .btn-grey {
+    font-family: 'ubuntu';
+    font-size: 15px;
+    color: white;
+    background-color: #3D3D3D;
+    padding: 8px 17px;
 }
 .web-submenu-row{
 	padding: 30px 0px;
@@ -739,6 +752,7 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 
 ul#menu-web-submenu {
     display: flex;
+	 margin-bottom: 0px;
 }
 ul#menu-web-submenu li{
 	list-style-type: none;
@@ -786,7 +800,7 @@ ul#menu-web-submenu li a{
 	content: '';
 	height: 3px;
 	width: 100px;
-	background-color: #9C9C9C;
+	background-color: #D6D6D6;
 	display: block;
 	position: relative;
 	top: 90px;
