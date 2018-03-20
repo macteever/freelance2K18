@@ -495,7 +495,7 @@ margin-left: auto;
 	font-weight: 600;
 }
 main{
-	min-height: calc(100vh - 40px);
+	min-height: calc(100vh - 70px);
 }
 .main-navigation-zone  ul li{
 	list-style: none;
@@ -716,18 +716,26 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
     width: 180px;
 }
 /** PAGE SITE INTERNET **/
-.page-template-template-web .logo-tagline, .page-template-template-web .large-menu nav ul li a{
-	color: #FFF;
+.web-top-page{
+	height: 100vh;
 }
-.creation-de-site-web .web-intro::after{
+
+.creation-de-site-web .page-intro::before, .identite-visuelle .page-intro::before{
 	content: '';
 	width: 3px;
-	height: 444px;
+	height: 100%;
 	background-color: #757575;
 	display: inline;
 	position: absolute;
-	right: 0px;
 	top: 20px;
+}
+.creation-de-site-web .page-intro h1, .identite-visuelle .page-intro h1{
+	max-width: 60%;
+	margin-left: 30px;
+}
+.creation-de-site-web .page-intro p, .identite-visuelle .page-intro p{
+	max-width: 60%;
+	margin-left: 30px;
 }
 .submenu-fixed{
 	position: fixed;
@@ -737,7 +745,7 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 	border-bottom: solid 1px #eaeaea;
 }
 .submenu-fixed .web-submenu-row{
-	padding: 15px 0px;
+	padding: 18px 0px;
 }
 .submenu-fixed .web-submenu-row .btn-grey {
     font-family: 'ubuntu';
@@ -745,6 +753,13 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
     color: white;
     background-color: #3D3D3D;
     padding: 8px 17px;
+}
+.submenu-fixed .container{
+	max-width: calc(100% - 100px);
+	padding: 0px;
+}
+.submenu-fixed .web-first-part-container{
+	margin-top: 80px;
 }
 .web-submenu-row{
 	padding: 30px 0px;
@@ -793,7 +808,10 @@ ul#menu-web-submenu li a{
 .web-slider-container .web-slider-title h3{
 	color: rgba(49,49,49,0.20);
 }
-.web-slider-title:nth-child(2n+0){
+.site.internet.web-slider-title{
+	flex-direction: row-reverse!important;
+}
+.site.internet.web-slider-row{
 	flex-direction: row-reverse!important;
 }
 .web-slider-container span::before{
@@ -814,10 +832,14 @@ ul#menu-web-submenu li a{
 .web-slider img{
 	width: 100%;
 }
-.content-web-slider{
+.content-web-slider, .content-web-slider3{
 	margin-left: -80px;
 }
-.content-web-slider .slick-dots{
+.content-web-slider2{
+	margin-left: auto;
+	margin-right: -80px;
+}
+/* .content-web-slider .slick-dots, .content-web-slider2 .slick-dots, .content-web-slider3 .slick-dots{
 	transform: translateY(-30px);
 }
 .web-slider-dots{
@@ -832,7 +854,7 @@ ul#menu-web-submenu li a{
 	font-style: italic;
 	list-style-type: none;
 	margin: 0px 15px;
-}
+} */
 .web-slider-content{
 	background-color: #EEEEEE;
 	padding: 30px 60px;
@@ -840,24 +862,38 @@ ul#menu-web-submenu li a{
 	margin-top: -22px;
 }
 .web-slider-arrows{
-	padding: 15px 20px;
+	padding: 15px 15px;
 }
-.web-left-arrow, .web-right-arrow{
+.web-left-arrow, .web-left-arrow2, .web-right-arrow, .web-right-arrow2{
 	cursor: pointer;
+	background-color: #FFFFFF;
+	position: absolute;
+	z-index: 999;
+	padding: 15px 5px;
+}
+.web-left-arrow2{
+	right: 160px;
+	bottom: -74px;
+}
+.web-right-arrow2{
+	right: 80px;
+	bottom: -74px;
+}
+.web-left-arrow{
+	bottom: -74px;
+	left: 80px;
+}
+.web-right-arrow{
+	bottom: -74px;
+	left: 166px;
 }
 
 /** PAGE LOGO **/
+.logo-top-page{
+	height: 100vh;
+}
 .identite-visuelle h1{
 	margin-bottom: 30px!important;
-}
-.identite-visuelle .logo-intro::after{
-	content: '';
-	width: 3px;
-	height: 380px;
-	background-color: #757575;
-	display: inline;
-	position: absolute;
-	right: -20px;
 }
 .identite-visuelle .logo-content h2::before{
 	content: '';
@@ -913,7 +949,7 @@ ul#menu-web-submenu li a{
 /** PAGE CONTACT **/
 .contact-container{
 	background-color: #313131;
-	min-height: 60vh;
+	min-height: calc(100vh - 40px);
 }
 .page-template-template-contact .menu-container, .page-template-template-contact .large-menu nav ul li a{
 	color: #FFF!important
@@ -1084,6 +1120,13 @@ font-family: 'Ubuntu', sans-serif;
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
+@media only screen and (min-width:1420px) {
+	.web-slider-row{
+		max-width: 1280px;
+		margin-left: auto!important;
+		margin-right: auto!important;
+	}
+}
 @media only screen and (max-width:1440px) {
 	.content-title{
 		font-size: 70px!important;
@@ -1250,13 +1293,6 @@ font-family: 'Ubuntu', sans-serif;
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-@media only screen and (max-width:1140px) {
-
-}
-@media only screen and (max-width:1280px) {
 
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),

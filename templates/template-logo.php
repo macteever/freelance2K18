@@ -4,25 +4,17 @@
       if( have_rows('logo_top_page') ):
           while ( have_rows('logo_top_page') ) : the_row();
           ?>
-          <div class="container-fluid pt-150 out" style="background: url(<?php the_sub_field('background'); ?>); background-size: cover; background-position: right;">
-             <div class="container">
-                <div class="row mt-80">
-                   <div class="col-xl-1 col-lg-1 col-md-1 col-12 logo-intro"></div>
-                   <div class="col-xl-8 col-lg-8 col-md-8 col-12 pl-50 ">
+          <div class="container-fluid logo-top-page out" style="background: url(<?php the_sub_field('background'); ?>); background-size: cover; background-position: right;">
+             <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                   <div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto page-intro">
                      <h1 class="roboto-slab fs-72 fw-700 mt-0"><?php the_sub_field('title'); ?></h1>
                      <div class="ubuntu fs-18 lh-24 mb-30">
                         <?php the_sub_field('headline'); ?>
                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="container-fluid">
-             <div class="container">
-                <div class="row pt-40">
-                   <div class="col-xl-1 col-lg-1 col-md-1 col-12"></div>
-                   <div class="col-xl-8 col-lg-8 col-md-8 col-12 pl-50">
-                      <a class="btn-grey" href="<?php the_sub_field('lien'); ?>">Demande de devis</a>
+                     <div class="ml-30">
+                        <a class="btn-grey" href="<?php the_sub_field('lien'); ?>">Demande de devis</a>
+                     </div>
                    </div>
                 </div>
              </div>
@@ -64,12 +56,12 @@
          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/creation-logo-site-internet-webmaster-poitiers-bordeaux-nicolas-metivier.png" alt="Création de logo webmaster freelance Bordeaux Poitiers Nicolas Métivier"/>
          <div class="container mb-150">
             <div class="row pt-100">
-               <div class="col-xl-10 col-lg-10 col-md-10 col-12 ml-auto">
+               <div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto">
                   <h3 class="roboto-slab uppercase fs-72 ls-10 fw-700 mb-50 pl-15"><?php the_field('logo_projets'); ?></h3>
                </div>
             </div>
             <div class="row">
-               <div class="col-xl-10 col-lg-10 col-md-10 col-12 ml-auto">
+               <div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto">
                   <?php $args = array(
                      'posts_per_page'   => 4,
                      'post_type'        => 'projet',
@@ -98,8 +90,10 @@
                ?>
             </div>
          </div>
-         <div class="roboto fs-17 ls-1 pr-15 mt-50 text-right link-category-logo">
-            <a href="<?php echo get_site_url(); ?>/category/logo/">Voir tout les projets</a>
+         <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto roboto fs-17 ls-1 pr-15 mt-50 text-right link-category-logo">
+               <a href="<?php echo get_site_url(); ?>/category/logo/">Voir tout les projets</a>
+            </div>
          </div>
       </div>
 </main>

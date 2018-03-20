@@ -16,17 +16,21 @@
     });
 
 	 // FIXED WEB PAGE submenu
-	 
+
 	 $(window).scroll(function() {
 	    var $scroll = $(window).scrollTop();
-	    if ($scroll > 590) {
+		 var $topPageHeight = $('.web-top-page').outerHeight();
+	    if ($scroll > $topPageHeight) {
 			 if (!$('.web-submenu-container').hasClass('submenu-fixed')) {
 				 $(".web-submenu-container").addClass("submenu-fixed");
+				 // $('.div-test').css({"margin-top":"80px"});
+
 			 }
 	    }
 		 else {
 			 if($('.web-submenu-container').hasClass('submenu-fixed')) {
 				 $('.web-submenu-container').removeClass('submenu-fixed');
+				 // $('.div-test').css({"margin-top":"0px"});
 			 }
 		 }
 	 });
@@ -158,25 +162,51 @@
 		// SLICK SLIDER PAGE SITE WEB
 
 		$('.content-web-slider').slick({
-			arrows: false,
+			arrows: true,
 			dots: false,
-			fade: true
+			fade: true,
+			asNavFor: '.img-web-slider',
+			nextArrow: '<i class="web-left-arrow fs-44 material-icons">chevron_left</i>',
+  			prevArrow: '<i class="web-right-arrow fs-44 material-icons">chevron_right</i>'
 		});
 		$('.img-web-slider').slick({
 			arrows: false,
-			dots: false
+			dots: false,
+			asNavFor: '.content-web-slider'
 		});
 
-		// CONTROL FIRST SLIDE WEBPAGE
-		$('.web-left-arrow').click(function(){
-		$('.WEBDESIGN .content-web-slider, .WEBDESIGN .img-web-slider').slick('slickPrev');
-	 	});
-		$('.web-right-arrow').click(function(){
-		$('.WEBDESIGN .content-web-slider, .WEBDESIGN .img-web-slider').slick('slickNext');
-	 	});
+		// SLIDER 2
+		$('.content-web-slider2').slick({
+			arrows: true,
+			dots: false,
+			fade: true,
+			asNavFor: '.img-web-slider2',
+			nextArrow: '<i class="web-left-arrow2 fs-44 material-icons">chevron_left</i>',
+			prevArrow: '<i class="web-right-arrow2 fs-44 material-icons">chevron_right</i>'
+		});
+		$('.img-web-slider2').slick({
+			arrows: false,
+			dots: false,
+			asNavFor: '.content-web-slider2'
+		});
+
+		// SLIDER 3
+		$('.content-web-slider3').slick({
+			arrows: true,
+			dots: false,
+			fade: true,
+			asNavFor: '.img-web-slider3',
+			nextArrow: '<i class="web-left-arrow fs-44 material-icons">chevron_left</i>',
+			prevArrow: '<i class="web-right-arrow fs-44 material-icons">chevron_right</i>'
+		});
+		$('.img-web-slider3').slick({
+			arrows: false,
+			dots: false,
+			asNavFor: '.content-web-slider3'
+		});
 
 		// INSERT DOTS
-		$( "<ul class='web-slider-dots'><li class='fs-12 roboto'>UX design</li><li class='roboto fs-12'>Responsive</li></ul>" ).insertAfter( ".content-web-slider" );
+		// $( "<ul class='web-slider-dots'><li class='fs-12 roboto'>UX design</li><li class='roboto fs-12'>Responsive</li></ul>" ).insertAfter( ".content-web-slider" );
 
       // SLIDER PAGE BLOG
 
