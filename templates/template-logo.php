@@ -4,7 +4,7 @@
       if( have_rows('logo_top_page') ):
           while ( have_rows('logo_top_page') ) : the_row();
           ?>
-          <div class="container-fluid logo-top-page" style="background: url(<?php the_sub_field('background'); ?>); background-size: cover; background-position: right;">
+          <div class="container-fluid logo-top-page" style="background: url(<?php the_sub_field('background'); ?>); background-size: cover; background-position: bottom;">
              <div class="container h-100">
                 <div class="row h-100 align-items-center">
                    <div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto page-intro">
@@ -30,18 +30,14 @@
          if( have_rows('logo_content') ):
             while ( have_rows('logo_content') ) : the_row();
             ?>
-            <div class="row mt-150 mb-250 logo-content align-items-end">
-               <div class="col-xl-1 col-lg-1 col-md-1 col-12">
-               </div>
-               <div class="col-xl-5 col-lg-5 col-md-5 col-12 zi-99">
+            <div class="row mt-150 mb-250 logo-content align-items-end justify-content-around">
+               <div class="col-xl-5 col-lg-5 col-md-6 col-12 zi-99">
                   <h2 class="roboto-slab fs-72 fw-700 uppercase ls-12 text-gold"><?php the_sub_field('subtitle'); ?></h2>
-                  <div class="ubuntu fs-18 lh-24 mt-20">
+                  <div class="ubuntu fs-17 lh-24 mt-20 ">
                      <?php the_sub_field('content'); ?>
                   </div>
                </div>
-               <div class="col-xl-1 col-lg-1 col-md-1 col-12">
-               </div>
-               <div class="col-xl-5 col-lg-5 col-md-5 col-12 zi-9">
+               <div class="col-xl-5 col-lg-5 col-md-6 col-12 zi-9">
                   <img src="<?php the_sub_field('img'); ?>" />
                </div>
             </div>
@@ -55,13 +51,13 @@
       <div class="container-fluid logo-projets">
          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/creation-logo-site-internet-webmaster-poitiers-bordeaux-nicolas-metivier.png" alt="Création de logo webmaster freelance Bordeaux Poitiers Nicolas Métivier"/>
          <div class="container mb-150">
-            <div class="row pt-100">
-               <div class="col-xl-9 col-lg-9 col-md-9 col-12 mx-auto">
-                  <h3 class="roboto-slab fs-72 ls-1 fw-700 mb-50 pl-15"><?php the_field('logo_projets'); ?></h3>
+            <div class="row pt-100 row-projets">
+               <div class="col-xl-9 col-lg-9 col-md-12 col-12 mx-auto">
+                  <h3 class="roboto-slab fs-72 ls-1 fw-700 mb-30 pl-15"><?php the_field('logo_projets'); ?></h3>
                </div>
             </div>
             <div class="row">
-               <div class="col-xl-9 col-lg-9 col-md-9 col-12 mx-auto">
+               <div class="col-xl-9 col-lg-9 col-md-12 col-12 mx-auto">
                   <?php $args = array(
                      'posts_per_page'   => 4,
                      'post_type'        => 'projet',
@@ -79,7 +75,7 @@
                   ?>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-12 float-left mt-15 mb-15">
                      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        <div style="height: 280px; background: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="projet-thumbnail" style="height: 280px; background: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         </div>
                      </a>
                   </div>
@@ -91,7 +87,7 @@
             </div>
          </div>
          <div class="row">
-            <div class="col-xl-9 col-lg-9 col-md-9 col-12 mx-auto roboto fs-17 ls-1 pr-15 mt-50 text-right link-category-logo">
+            <div class="col-xl-9 col-lg-9 col-md-12 col-12 mx-auto roboto fs-17 ls-1 pr-15 mt-30 text-right link-category-logo">
                <a class="pr-15" href="<?php echo get_site_url(); ?>/category/logo/">Voir tout les projets</a>
             </div>
          </div>

@@ -46,7 +46,7 @@
                            </div>
                         <?php endif; ?>
                      </div>
-                     <div class="col-xl-6 col-lg-6 col-md-6 col-12 pl-0 video-content-child-img">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-12 pl-0 video-content-child-img hidden-xs">
                         <img src="<?php the_sub_field('image'); ?>" />
                      </div>
                    </div>
