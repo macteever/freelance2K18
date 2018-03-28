@@ -1,5 +1,5 @@
 			<!-- footer -->
-			<footer class="footer mb-10" role="contentinfo">
+			<footer class="footer" role="contentinfo">
 				<div class="container-fluid" id="contact">
 					<div class="row justify-content-between align-items-center">
 						<div>
