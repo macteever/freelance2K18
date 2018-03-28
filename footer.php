@@ -12,7 +12,7 @@
 							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
 							<a href="/mentions-legales" class="text-darkgrey">-<b> Mentions légales</b></a>
 						</p>
-						 <img class="logo-footer mr-15" src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaster-bordeaux-nicolas-metivier-backlink-dark.svg" alt="Webmaster création de site internet Webdesign Bordeaux Poitiers Nicolas Métivier">
+						 <img class="logo-footer mr-15 hidden-xs" src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaster-bordeaux-nicolas-metivier-backlink-dark.svg" alt="Webmaster création de site internet Webdesign Bordeaux Poitiers Nicolas Métivier">
 					</div>
 				</div>
 			</footer>

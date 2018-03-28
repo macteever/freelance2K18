@@ -1328,6 +1328,29 @@ font-family: 'Ubuntu', sans-serif;
 	}
 	.web-first-part{
 		width: 100%!important;
+		transform: translateY(30px);
+	}
+	.web-first-part h2{
+		font-size: 48px;
+	}
+	.web-first-part-container img{
+		height: 280px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.web-first-part-row{
+		margin-top: 3px;
+	}
+	.web-slider-container{
+		padding-top: 15px;
+		margin-bottom: 15px;
+	}
+	.img-web-slider img, .img-web-slider2 img, .img-web-slider3 img{
+		height: 280px;
+    	object-fit: cover;
+	}
+	.web-slider-content {
+    padding: 30px 25px 0px 30px;
 	}
 }
 

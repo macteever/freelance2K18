@@ -45,8 +45,8 @@
 		if( have_rows('web_first_part') ):
 			while ( have_rows('web_first_part') ) : the_row();
 			?>
-			<div class="row mt-100 align-items-end anim-300">
-				<div class="col-xl-4 col-lg-4 col-md-5">
+			<div class="row web-first-part-row mt-100 align-items-end anim-300">
+				<div class="col-xl-4 col-lg-4 col-md-5 col-12">
 					<img src="<?php the_sub_field('img'); ?>" alt=""/>
 				</div>
 				<div class="text-container7 web-first-part zi-99">
