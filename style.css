@@ -76,7 +76,7 @@ a {
 	transition: all 300ms ease-out;
 }
 a:hover {
-	color:#444;
+	color: inherit!important;
 }
 a:focus {
 	outline:0;
@@ -1333,6 +1333,10 @@ font-family: 'Ubuntu', sans-serif;
 	.web-first-part h2{
 		font-size: 48px;
 	}
+	.web-first-part-content{
+		font-size: 16px;
+		line-height: 22px;
+	}
 	.web-first-part-container img{
 		height: 280px;
 		width: 100%;
@@ -1349,8 +1353,36 @@ font-family: 'Ubuntu', sans-serif;
 		height: 280px;
     	object-fit: cover;
 	}
+	.web-slider-headlines {
+    margin-bottom: -20px!important;
+	}
 	.web-slider-content {
     padding: 30px 25px 0px 30px;
+	 font-size: 16px;
+    line-height: 22px;
+	}
+	.web-arrow{
+	 font-size: 34px;
+	}
+	.web-right-arrow {
+    bottom: auto;
+    left: 59px;
+    top: -63px;
+	}
+	.web-left-arrow {
+    bottom: auto;
+    left: 15px;
+    top: -63px;
+	}
+	.web-left-arrow2 {
+	 right: 44px;
+  	 top: -63px;
+	 bottom: auto;
+	}
+	.web-right-arrow2 {
+    bottom: auto;
+    right: 0px;
+    top: -63px;
 	}
 }
 
@@ -1395,6 +1427,38 @@ font-family: 'Ubuntu', sans-serif;
 		left: 30%!important;
 		top: 15vh!important;
 	}
+	.creation-de-site-web .page-intro h1, .identite-visuelle .page-intro h1 {
+    max-width: 100%;
+    margin-left: 20px;
+	}
+	.creation-de-site-web .page-intro p, .identite-visuelle .page-intro p{
+		max-width: 80%;
+		margin-left: 20px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.web-first-part-content {
+    font-size: 15px;
+    line-height: 20px;
+ 	}
+	.web-slider-content{
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.web-slider-container span::before{
+		display: none;
+	}
+	.web-slider-title span {
+    font-size: 100px;
+	 line-height: 70px;
+	 margin-left: 10px;
+	}
+	.web-slider-title h3{
+		font-size: 40px;
+		margin-right: 0px;
+		margin-left: 15px;
+	}
+
 }
 @media only screen and (max-width:320px) {
 	/* Home */
@@ -1408,6 +1472,13 @@ font-family: 'Ubuntu', sans-serif;
 	.page-template-template-home-parallax .home-excerpt {
     font-size: 15px!important;
 	}
+	/* WEB PAGE */
+	.web-top-page h1 {
+    font-size: 40px;
+ 	}
+	.web-slider-title h3 {
+    font-size: 34px;
+ 	}
 }
 
 

@@ -168,8 +168,8 @@
 			dots: false,
 			fade: true,
 			asNavFor: '.img-web-slider',
-			nextArrow: '<i class="web-left-arrow fs-44 material-icons">chevron_left</i>',
-  			prevArrow: '<i class="web-right-arrow fs-44 material-icons">chevron_right</i>'
+			nextArrow: '<i class="web-left-arrow web-arrow fs-44 material-icons">chevron_left</i>',
+  			prevArrow: '<i class="web-right-arrow web-arrow fs-44 material-icons">chevron_right</i>'
 		});
 		$('.img-web-slider').slick({
 			arrows: false,
@@ -183,8 +183,8 @@
 			dots: false,
 			fade: true,
 			asNavFor: '.img-web-slider2',
-			nextArrow: '<i class="web-left-arrow2 fs-44 material-icons">chevron_left</i>',
-			prevArrow: '<i class="web-right-arrow2 fs-44 material-icons">chevron_right</i>'
+			nextArrow: '<i class="web-left-arrow2 web-arrow fs-44 material-icons">chevron_left</i>',
+			prevArrow: '<i class="web-right-arrow2 web-arrow fs-44 material-icons">chevron_right</i>'
 		});
 		$('.img-web-slider2').slick({
 			arrows: false,
