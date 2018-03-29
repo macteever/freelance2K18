@@ -728,7 +728,6 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 .about-container2 .about-link{
 	display: block;
     margin-left: auto;
-    width: 180px;
 }
 /** PAGE SITE INTERNET **/
 .web-top-page{
@@ -1196,7 +1195,7 @@ font-family: 'Ubuntu', sans-serif;
 	.web-top-page{
 		background-position: bottom!important;
 	}
-	.page-template-template-web h1, .page-template-template-logo h1, .page-template-template-video h1{
+	.page-template-template-web h1, .page-template-template-logo h1, .page-template-template-video h1, .page-template-template-about h1{
 		font-size: 52px;
 	}
 	.page-template-template-web .page-intro p, .page-template-template-logo .page-intro p, .page-template-template-video .video-headlines p{
@@ -1285,7 +1284,17 @@ font-family: 'Ubuntu', sans-serif;
 	.video-headlines .mw-50{
 		max-width: 80%;
 	}
-
+	/* ABOUT */
+	.about-container2 .about-row{
+		align-items: center!important;
+	}
+	.about-container2 h1{
+		margin-left: -100%;
+		width: auto;
+	}
+	.about-container2 img{
+		margin-top: 80px;
+	}
 }
 @media only screen and (max-width:768px) {
 	.hidden-xs{display: none!important;}
@@ -1353,7 +1362,7 @@ font-family: 'Ubuntu', sans-serif;
 		background-color: #FFFFFF!important;
 	}
 	/* WEB PAGE */
-	.web-top-page h1, .page-template-template-logo h1, .page-template-template-video h1{
+	.web-top-page h1, .page-template-template-logo h1, .page-template-template-video h1, .page-template-template-about h1{
 		font-size: 48px;
 		margin-bottom: 20px;
 	}
@@ -1437,6 +1446,26 @@ font-family: 'Ubuntu', sans-serif;
 	.page-template-template-video p{
 		font-size: 15px;
 		line-height: 21px;
+	}
+	/* ABOUT */
+	.about-container1{
+		height: 45vh;
+	}
+	.about-container2 h1{
+		margin-left: 0px!important;
+	}
+	.about-container2 img{
+		margin-top: 50px;
+		height: 280px;
+		object-fit: cover;
+		width: 100%;
+	}
+	.about-container2 .about-link{
+		width: auto;
+	}
+	.about-link .btn-purple{
+		font-size: 15px;
+    	padding: 15px 20px;
 	}
 }
 
@@ -1540,7 +1569,7 @@ font-family: 'Ubuntu', sans-serif;
     font-size: 15px!important;
 	}
 	/* WEB PAGE */
-	.web-top-page h1, .page-template-template-logo h1, .page-template-template-video h1 {
+	.web-top-page h1, .page-template-template-logo h1, .page-template-template-video h1, .page-template-template-about h1 {
     font-size: 40px;
  	}
 	.web-slider-title h3 {
