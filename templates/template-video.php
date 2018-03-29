@@ -17,7 +17,7 @@
 				<div class="row h-100 align-items-center">
 					<div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto video-headlines">
 						<h1 class="roboto-slab fs-72 fw-700 ls-1"><?php the_title(); ?></h1>
-						<div class="ubuntu fs-18 lh-24 mw-50">
+						<div class="ubuntu fs-17 lh-24 mw-50">
 							<?php the_field('intro_video'); ?>
 						</div>
 					</div>
