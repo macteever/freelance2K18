@@ -32,7 +32,7 @@
             ?>
             <div class="row mt-150 mb-250 logo-content align-items-end justify-content-around">
                <div class="col-xl-5 col-lg-5 col-md-6 col-12 zi-99">
-                  <h2 class="roboto-slab fs-72 fw-700 uppercase ls-12 text-gold"><?php the_sub_field('subtitle'); ?></h2>
+                  <h2 class="roboto-slab fs-72 fw-700 ls-1"><?php the_sub_field('subtitle'); ?></h2>
                   <div class="ubuntu fs-17 lh-24 mt-20 ">
                      <?php the_sub_field('content'); ?>
                   </div>

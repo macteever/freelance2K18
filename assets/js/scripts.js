@@ -40,13 +40,12 @@
     // MENU BURGER
       // Object variables for event handlers
       var triggers = ({
-          menuBtn : $('#menu-btn')/*,*/
-          // Add here...
+          menuBtn : $('#menu-btn')
       });
 
       triggers.menuBtn.click(function() {
         $("body").toggleClass("responsive");
-        $(".nav-mobile").fadeToggle("slow");
+        $(".nav-mobile").slideToggle("slow");
         $("#header-sticky").css('background-color','transparent');
         $(this).toggleClass('open');
         $(this).find("button").toggleClass('menu-open');

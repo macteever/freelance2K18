@@ -5,11 +5,9 @@
 				<div class="row no-flex pt-150">
 					<div class="col-xl-5 col-lg-5 col-md-5 col-12">
 						<h1 class="fs-72 ls-4 ml-30 uppercase text-white roboto-slab fw-700"><?php the_title(); ?></h1>
-						<div class="fs-18 ubuntu lh-24 text-white contact-content"><?php the_field('contact_content'); ?></div>
+						<div class="fs-17 ubuntu lh-24 text-white contact-content"><?php the_field('contact_content'); ?></div>
 					</div>
-					<div class="col-xl-1 col-lg-1 col-md-1 col-12">
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-12">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-12 mx-auto">
 						<?php echo do_shortcode('[contact-form-7 id="4" title="Formulaire de contact 1"]'); ?>
 					</div>
 				</div>

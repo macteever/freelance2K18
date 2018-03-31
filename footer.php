@@ -1,4 +1,7 @@
 			<!-- footer -->
+			<div class="menu-cta">
+				<a href="#target_menu" class="uppercase fs-15">Menu<i class="material-icons fs-16 ml-10">vertical_align_top</i></a>
+			</div>
 			<footer class="footer" role="contentinfo">
 				<div class="container-fluid" id="contact">
 					<div class="row justify-content-between align-items-center">
@@ -9,9 +12,9 @@
 						</div>
 
 						<p class="text-darkgrey fs-14 ubuntu fw-300 ls-1 mb-0">
-							<a href="/mentions-legales" class="text-darkgrey mr-10"><b> Mentions légales</b></a>|<span class="ml-10 mr-10"><?php echo date('Y'); ?><?php// bloginfo('name'); ?></span>
+							<a href="/=?273" class="text-darkgrey mr-10"><b> Mentions légales</b></a>|<span class="ml-10 mr-10"><?php echo date('Y'); ?><?php// bloginfo('name'); ?></span>
 						</p>
-						 <img class="logo-footer mr-15 hidden-xs" src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaster-bordeaux-nicolas-metivier-backlink-dark.svg" alt="Webmaster création de site internet Webdesign Bordeaux Poitiers Nicolas Métivier">
+						 <img class="logo-footer mr-15 hidden-xs" src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaster-bordeaux-nicolas-metivier-backlink-dark.svg" alt="Webmaster création de site internet Bordeaux Poitiers Nicolas Métivier">
 					</div>
 				</div>
 			</footer>
