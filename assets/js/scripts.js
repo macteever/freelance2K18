@@ -7,13 +7,28 @@
     $(window).scroll(function(){
       var $header = $('.header');
 			var $menu_section = $('.large-menu, .container-logo-menu');
+			var $menu_cta = $('.menu-cta');
       if ($(this).scrollTop() > 80){
 				$menu_section.css({"-webkit-transform":"translateY(-80px)"});
+				$menu_cta.css({"-webkit-transform":"translateY(-125px)"});
       }
       else{
 				$menu_section.css({"-webkit-transform":"translateY(0px)"});
+				$menu_cta.css({"-webkit-transform":"translateY(80px)"});
       }
     });
+
+	 // PAGE LOADER
+
+	 $(document).ready(function(){
+		  $(".page-loader").slideToggle(700,'swing');
+	  });
+
+	 // CALL BACK Menu
+
+	 $('.menu-cta').click(function() {
+		 	$('.large-menu, .container-logo-menu').toggleClass('callBackMenu');
+	 });
 
 	 // FIXED WEB PAGE submenu
 

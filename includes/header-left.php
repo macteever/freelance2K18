@@ -1,11 +1,11 @@
-<div id="target_menu" class="row align-items-center menu-section anim-300 ml-50 mr-50">
+<div class="row align-items-center menu-section anim-300 ml-50 mr-50">
     <div class="col-xl-3 col-lg-3 col-3 anim-300 container-logo-menu pl-15">
        <!-- logo -->
           <div class="logo anim-300 d-flex align-items-center">
             <a href="<?php echo home_url(); ?>">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="Webmaster création de site internet Webdesign Bordeaux Poitiers Nicolas Métivier" class="anim-300 logo-img">
             </a>
-            <div class="logo-tagline ml-5 anim-300">
+            <div class="logo-tagline ml-5 anim-300 hidden-sm">
                <p class="ubuntu fs-15 ml-15 mb-0"><strong>Création de site internet</strong></p>
                <p class="ubuntu fs-15 ml-15 mb-0"><strong class="fw-300">Bordeaux | Poitiers</strong></p>
             </div>

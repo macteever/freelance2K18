@@ -1,6 +1,6 @@
 			<!-- footer -->
-			<div class="menu-cta">
-				<a href="#target_menu" class="uppercase fs-15">Menu<i class="material-icons fs-16 ml-10">vertical_align_top</i></a>
+			<div class="menu-cta anim-300">
+				<a class="uppercase fw-600 fs-15">Menu<i class="material-icons fs-16 ml-10">vertical_align_top</i></a>
 			</div>
 			<footer class="footer" role="contentinfo">
 				<div class="container-fluid" id="contact">
@@ -8,6 +8,7 @@
 						<div>
 							<a href="https://www.facebook.com/webmaster.bordeaux/" target="blank"><i class="fa fa-facebook-official text-darkgrey fs-22 ml-15" aria-hidden="true"></i></a>
 							<a href="https://www.linkedin.com/in/nicolas-metivier-b169a8115/" target="blank"><i class="fa fa-linkedin text-darkgrey fs-22 ml-15" aria-hidden="true"></i></a>
+							<a class="hidden-xs" href="https://twitter.com/Webmaster_bdx" target="blank"><i class="fa fa-twitter text-darkgrey fs-22 ml-15" aria-hidden="true"></i></a>
 							<a href="mailto:contact@nicolasmetivier.fr"><i class="fa fa-envelope text-darkgrey fs-22 ml-15" aria-hidden="true"></i></a>
 						</div>
 
@@ -15,7 +16,7 @@
 							<a href="/=?273" class="text-darkgrey mr-10"><b> Mentions légales</b></a>|<span class="ml-10 mr-10"><?php echo date('Y'); ?><?php// bloginfo('name'); ?></span>
 						</p>
 						 <img class="logo-footer mr-15 hidden-xs" src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaster-bordeaux-nicolas-metivier-backlink-dark.svg" alt="Webmaster création de site internet Bordeaux Poitiers Nicolas Métivier">
-					</div>
+					</d6v>
 				</div>
 			</footer>
 			<!-- /footer -->
