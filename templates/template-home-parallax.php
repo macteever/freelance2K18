@@ -22,7 +22,8 @@
                      </div>
                      <a class="home-part-cta mt-15 anim-300" href="<?php the_sub_field('link'); ?>">En savoir plus</a>
                   </div>
-                  <img class="home-img-anim" src="<?php the_sub_field('img_part'); ?>" alt=""/>
+                  <?php $image = get_sub_field('img_part'); ?>
+                  <img class="home-img-anim" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
                </div>
             </section>
             <?php

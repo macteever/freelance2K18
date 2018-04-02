@@ -47,7 +47,8 @@
 			?>
 			<div class="row web-first-part-row mt-100 align-items-end anim-300">
 				<div class="col-xl-4 col-lg-4 col-md-5 col-12">
-					<img src="<?php the_sub_field('img'); ?>" alt=""/>
+					<?php $image = get_sub_field('img'); ?>
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
 				</div>
 				<div class="text-container7 web-first-part zi-99">
 					<h2 class="roboto-slab fs-60 fw-700 ml-50"><?php the_sub_field('title'); ?></h2>
@@ -90,8 +91,9 @@
 				<?php
 				if( have_rows('img_web_slider') ):
 					while ( have_rows('img_web_slider') ) : the_row();
+					$image = get_sub_field('img_web_slide');
 					?>
-					<img class="" src="<?php the_sub_field('img_web_slide') ?>" alt="" title=""/>
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
 					<?php
 				endwhile;
 				else :

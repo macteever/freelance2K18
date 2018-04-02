@@ -38,6 +38,7 @@
                            <?php the_sub_field('content'); ?>
                         </div>
                         <?php
+								$image = get_sub_field('image');
                         $link = get_sub_field('lien');
 
                         if( $link ): ?>
@@ -46,8 +47,9 @@
                            </div>
                         <?php endif; ?>
                      </div>
+
                      <div class="col-xl-6 col-lg-6 col-md-6 col-12 pl-0 video-content-child-img hidden-xs">
-                        <img src="<?php the_sub_field('image'); ?>" />
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>" />
                      </div>
                    </div>
                 </div>

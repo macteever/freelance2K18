@@ -10,7 +10,10 @@
                       while ( have_rows('about_content') ) : the_row();
                       ?>
                        <div class="col-xl-5 col-lg-5 col-md-6 col-12 ml-auto">
-                          <img class="" src="<?php the_sub_field('img'); ?>"/>
+								  <?php
+								  	$image = get_sub_field('img');
+								  ?>
+                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
                        </div>
                        <div class="col-xl-5 col-lg-5 col-md-6 col-12 mr-auto">
                          <h1 class="roboto-slab fs-72 ls-1 fw-700 mb-30"><?php the_sub_field('title'); ?></h1>
