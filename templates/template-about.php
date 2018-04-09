@@ -16,7 +16,7 @@
                           <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
                        </div>
                        <div class="col-xl-5 col-lg-5 col-md-6 col-12 mr-auto">
-                         <h1 class="roboto-slab fs-72 ls-1 fw-700 mb-30"><?php the_sub_field('title'); ?></h1>
+                         <div class="roboto-slab fs-72 ls-1 fw-700"><?php the_sub_field('title'); ?></div>
                          <div class="ubuntu fs-17 lh-24 mb-30">
                             <?php the_sub_field('content'); ?>
                          </div>

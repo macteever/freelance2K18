@@ -46,6 +46,10 @@ body {
 h1{
 	margin-bottom: 30px;
 }
+h2, h3, h1{
+	font-size: inherit;
+	font-weight: inherit;
+}
 
 /* clear */
 .clear:before,
@@ -149,6 +153,7 @@ strong{
  .fs-48{font-size: 48px;}
  .fs-52{font-size: 52px;}
  .fs-60{font-size: 60px;}
+ .fs-66{font-size: 66px;}
  .fs-72{font-size: 72px;}
  .fs-80{font-size: 80px;}
  .fs-90{font-size: 90px;}
@@ -167,11 +172,11 @@ strong{
 	font-size: 16px;
 	color: white;
 	background-color: #3D3D3D;
-	padding: 10px 20px;
+	padding: 12px 26px;
 }
 .btn-gold{
 	background-color: #D0B88B;
-	padding: 10px 20px;
+	padding: 12px 26px;
 	font-family: 'ubuntu';
 	font-size: 16px;
 	color: white;
@@ -186,6 +191,7 @@ strong{
 
 .text-white{color: #FFF;}
 .text-black{color: #444;}
+.text-purple{color: #6F618D;}
 .text-grey{color: #757575;}
 .text-darkgrey{color: #3D3D3D;}
 .text-gold{color: #D0B88B;}
@@ -208,6 +214,7 @@ strong{
 .lh-24{line-height: 24px;}
 .lh-28{line-height: 28px;}
 .lh-50{line-height: 50px;}
+.lh-72{line-height: 72px;}
 .lh-100{line-height: 100px;}
 
 .ls-05{letter-spacing: 0.5px;}
@@ -580,9 +587,13 @@ main{
 .home-part{
 	height: 100vh;
 }
+.content-title h2, .content-title h1{
+	font-size: 80px!important;
+	font-weight: 700!important;
+}
 .home_part1{
 	/* Rectangle 20: */
-background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
+	background-image: linear-gradient(130deg, #FFE9B0 0%, #A6824B 100%)!important;
 }
 .home_part2{
 	background-image: linear-gradient(-150deg, #EFEFEF 0%, #D7D7D7 91%)!important;
@@ -727,6 +738,7 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 .about-container2 h1{
 	width: 620px;
 	margin-left: -200px;
+	margin-bottom: 10px;
 }
 .about-container2 .about-link{
 	display: block;
@@ -738,7 +750,7 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 	background-attachment: fixed!important;
 }
 
-.creation-de-site-web .page-intro::before, .identite-visuelle .page-intro::before{
+.creation-de-site-internet .page-intro::before, .creation-de-logo .page-intro::before{
 	content: '';
 	width: 3px;
 	height: 100%;
@@ -747,11 +759,11 @@ background-image: linear-gradient(-144deg, #E6D3B2 0%, #D0B88B 93%)!important;
 	position: absolute;
 	top: 20px;
 }
-.creation-de-site-web .page-intro h1, .identite-visuelle .page-intro h1{
+.creation-de-site-internet .page-intro h1, .creation-de-logo .page-intro h1{
 	max-width: 60%;
 	margin-left: 30px;
 }
-.creation-de-site-web .page-intro p, .identite-visuelle .page-intro p{
+.creation-de-site-internet .page-intro p, .creation-de-logo .page-intro p{
 	max-width: 60%;
 	margin-left: 30px;
 }
@@ -846,7 +858,7 @@ ul#menu-web-submenu li a{
 	top: 85px;
 }
 .web-slider-headlines{
-	margin-bottom: -50px;
+	margin-bottom: -20px;
 }
 .web-slider h3{
 	padding-left: 60px;
@@ -880,7 +892,7 @@ ul#menu-web-submenu li a{
 }
 .web-left-arrow2{
 	right: 160px;
-	bottom: -26px;
+	bottom: -30px;
 }
 .web-right-arrow2{
 	right: 80px;
@@ -899,28 +911,15 @@ ul#menu-web-submenu li a{
 	height: 100vh;
 	background-attachment: fixed!important;
 }
-.identite-visuelle h1{
+.creation-de-logo h1{
 	margin-bottom: 30px!important;
 }
-.identite-visuelle .logo-content h2::before{
-	content: '';
-	width: 250px;
-	height: 3px;
-	background-color: #757575;
-	display: inline;
-	position: absolute;
-	bottom: 15px;
-   left: -60%;
-}
-.identite-visuelle .logo-content h2{
-	transform: translateX(60%);
-}
 /* partie projets */
-.identite-visuelle .logo-projets img{
+.creation-de-logo .logo-projets img{
 	position: absolute;
 	left: -50px;
 }
-.identite-visuelle .link-category-logo::before{
+.creation-de-logo .link-category-logo::before{
 	content: '';
 	width: 80px;
 	height: 2px;
@@ -971,7 +970,7 @@ ul#menu-web-submenu li a{
 .page-template-template-contact .menu-container, .page-template-template-contact .large-menu nav ul li a{
 	color: #FFF!important
 }
-.contact .contact-content::before{
+.communication-digitale .contact-content::before{
 	content: '';
 	display: inline;
 	width: 4px;
@@ -979,10 +978,10 @@ ul#menu-web-submenu li a{
 	position: absolute;
 	background-color: #D0B88B;
 }
-.contact h1{
+.communication-digitale h1{
 	margin-top: 0px;
 }
-.contact .contact-content p{
+.communication-digitale .contact-content p{
 	margin-left: 30px;
 	margin-bottom: 30px;
 }
@@ -1012,7 +1011,7 @@ textarea{
 	letter-spacing: 0.41px;
 	padding: 10px;
 }
-.contact input[type="submit"]{
+.communication-digitale input[type="submit"]{
 	background-color: #D0B88B;
 	color: #FFF;
 }
@@ -1079,12 +1078,12 @@ font-family: 'Ubuntu', sans-serif;
 	}
 }
 @media only screen and (max-width:1440px) {
-	.content-title{
+	.content-title h1, .content-title h2{
 		font-size: 70px!important;
 	}
 }
 @media only screen and (max-width:1280px) {
-	.content-title{
+	.content-title h1, .content-title h2{
 		font-size: 60px!important;
 	}
 }
@@ -1113,11 +1112,12 @@ font-family: 'Ubuntu', sans-serif;
 		font-size: 13px;
 	}
 	/** HOME **/
-	.page-template-template-home-parallax .content-title{
+	.page-template-template-home-parallax .content-title h2, .page-template-template-home-parallax .content-title h1{
 		font-size: 52px!important;
 	}
 	.page-template-template-home-parallax .home-excerpt{
 		font-size: 16px!important;
+		line-height: 22px;
 	}
 	.page-template-template-home-parallax .home_part3 .home-img-anim{
 		max-width: 55%;
@@ -1129,9 +1129,14 @@ font-family: 'Ubuntu', sans-serif;
 	}
 	.page-template-template-web h1, .page-template-template-logo h1, .page-template-template-video h1, .page-template-template-about h1, .page-template-template-contact h1{
 		font-size: 52px;
+		line-height: 52px;
 	}
 	.page-template-template-web .page-intro p, .page-template-template-logo .page-intro p, .page-template-template-video .video-headlines p{
 		font-size: 16px;
+	}
+	ul#menu-web-submenu li {
+    	list-style-type: none;
+    	margin: 0px 10px;
 	}
 	.web-first-part-container .align-items-end{
 		align-items: end!important;
@@ -1155,7 +1160,7 @@ font-family: 'Ubuntu', sans-serif;
 	.web-slider-title span{
 		font-size: 120px;
 	}
-	.web-slider-title h3{
+	.web-slider-title h2{
 		font-size: 50px;
 	}
 	.web-left-arrow {
@@ -1195,14 +1200,14 @@ font-family: 'Ubuntu', sans-serif;
 	.logo-content p{
 		font-size: 16px;
 	}
-	.identite-visuelle .logo-content h2 {
-    transform: translateX(94%);
+	.logo-content-img{
+		margin-top: 30px;
 	}
-	.identite-visuelle .logo-content h2::before{
+	.creation-de-logo .logo-content h2::before{
 		width: 280px;
 		left: -93%;
 	}
-	.identite-visuelle .logo-projets img {
+	.creation-de-logo .logo-projets img {
     position: absolute;
     left: -180px;
  	}
@@ -1303,6 +1308,7 @@ font-family: 'Ubuntu', sans-serif;
 	.web-top-page h1, .page-template-template-logo h1, .page-template-template-video h1, .page-template-template-about h1, .page-template-template-contact h1{
 		font-size: 48px;
 		margin-bottom: 20px;
+		line-height: 50px;
 	}
 	.web-first-part{
 		width: 100%!important;
@@ -1332,7 +1338,7 @@ font-family: 'Ubuntu', sans-serif;
     	object-fit: cover;
 	}
 	.web-slider-headlines {
-    margin-bottom: -20px!important;
+    margin-bottom: -10px!important;
 	}
 	.web-slider-content {
     padding: 30px 25px 0px 30px;
@@ -1363,15 +1369,14 @@ font-family: 'Ubuntu', sans-serif;
     top: -63px;
 	}
 	/* LOGO */
-	.identite-visuelle .logo-content h2::before{
+	.creation-de-logo .logo-content h2::before{
 		display: none;
 	}
-	.identite-visuelle .logo-content h2{
+	.creation-de-logo .logo-content h2{
 		transform: none;
 		text-transform: none!important;
 		letter-spacing: 1px;
 		font-size: 48px;
-		font-weight: 700;
 		color: #444;
 	}
 	.logo-projets h3{
@@ -1421,7 +1426,7 @@ font-family: 'Ubuntu', sans-serif;
 	.page-template-template-contact p{
 		font-size: 16px;
 	}
-	.contact .contact-content::before{
+	.communication-digitale .contact-content::before{
 		display: none;
 	}
 	/* MENU OPEN */
@@ -1454,7 +1459,7 @@ font-family: 'Ubuntu', sans-serif;
 	.home-part{
 		padding: 0px 15px;
 	}
-	.page-template-template-home-parallax .content-title{
+	.page-template-template-home-parallax .content-title h1, .page-template-template-home-parallax .content-title h2{
 		font-size: 42px!important;
 	}
 	#fp-nav ul li{
@@ -1474,15 +1479,18 @@ font-family: 'Ubuntu', sans-serif;
 		left: 30%!important;
 		top: 15vh!important;
 	}
-	.creation-de-site-web .page-intro h1, .identite-visuelle .page-intro h1 {
+	.creation-de-site-internet .page-intro h1, .creation-de-logo .page-intro h1 {
     max-width: 100%;
     margin-left: 20px;
 	}
-	.creation-de-site-web .page-intro p, .identite-visuelle .page-intro p{
+	.creation-de-site-internet .page-intro p, .creation-de-logo .page-intro p{
 		max-width: 80%;
 		margin-left: 20px;
 		font-size: 15px;
 		line-height: 20px;
+	}
+	.web-first-part h2 {
+    	font-size: 36px;
 	}
 	.web-first-part-content {
     font-size: 15px;
@@ -1500,7 +1508,7 @@ font-family: 'Ubuntu', sans-serif;
 	 line-height: 70px;
 	 margin-left: 10px;
 	}
-	.web-slider-title h3{
+	.web-slider-title h2{
 		font-size: 40px;
 		margin-right: 0px;
 		margin-left: 15px;
@@ -1544,7 +1552,7 @@ font-family: 'Ubuntu', sans-serif;
 		font-size: 16px;
 		padding: 8px 25px;
 	}
-	.page-template-template-home-parallax .content-title {
+	.page-template-template-home-parallax .content-title h1, .page-template-template-home-parallax .content-title h2{
     font-size: 36px!important;
 	}
 	.page-template-template-home-parallax .home-excerpt {
@@ -1553,8 +1561,9 @@ font-family: 'Ubuntu', sans-serif;
 	/* WEB PAGE */
 	.web-top-page h1, .page-template-template-logo h1, .page-template-template-video h1, .page-template-template-about h1 {
     font-size: 40px;
+	 line-height: 40px;
  	}
-	.web-slider-title h3 {
+	.web-slider-title h2 {
     font-size: 34px;
  	}
 }
@@ -1708,7 +1717,7 @@ a img.aligncenter {
 	@page {
 		margin:0.5cm;
 	}
-	p,
+	/* p,
 	h2,
 	h3 {
 		orphans:3;
@@ -1717,7 +1726,7 @@ a img.aligncenter {
 	h2,
 	h3 {
 		page-break-after:avoid;
-	}
+	} */
 }
 
 /*----------------- ANIMATION ------------------*/
@@ -1796,89 +1805,5 @@ z-index: 1;
 	opacity: 1;
 }
 /*** Animation transition ***/
-/* move to with different easing */
-
-.pt-page-moveToLeftEasing {
-	-webkit-animation: moveToLeft .7s ease-in-out both;
-	animation: moveToLeft .7s ease-in-out both;
-}
-.pt-page-moveToRightEasing {
-	-webkit-animation: moveToRight .7s ease-in-out both;
-	animation: moveToRight .7s ease-in-out both;
-}
-.pt-page-moveToTopEasing {
-	-webkit-animation: moveToTop .7s ease-in-out both;
-	animation: moveToTop .7s ease-in-out both;
-}
-.pt-page-moveToBottomEasing {
-	-webkit-animation: moveToBottom .7s ease-in-out both;
-	animation: moveToBottom .7s ease-in-out both;
-}
-
-/** keyframes animation transtion **/
-
-@-webkit-keyframes moveToLeft {
-	from { }
-	to { -webkit-transform: translateX(-100%); }
-}
-@keyframes moveToLeft {
-	from { }
-	to { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
-}
-
-@-webkit-keyframes moveFromLeft {
-	from { -webkit-transform: translateX(-100%); }
-}
-@keyframes moveFromLeft {
-	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
-}
-
-@-webkit-keyframes moveToRight {
-	from { }
-	to { -webkit-transform: translateX(100%); }
-}
-@keyframes moveToRight {
-	from { }
-	to { -webkit-transform: translateX(100%); transform: translateX(100%); }
-}
-
-@-webkit-keyframes moveFromRight {
-	from { -webkit-transform: translateX(100%); }
-}
-@keyframes moveFromRight {
-	from { -webkit-transform: translateX(100%); transform: translateX(100%); }
-}
-
-@-webkit-keyframes moveToTop {
-	from { }
-	to { -webkit-transform: translateY(-100%); }
-}
-@keyframes moveToTop {
-	from { }
-	to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
-}
-
-@-webkit-keyframes moveFromTop {
-	from { -webkit-transform: translateY(-100%); }
-}
-@keyframes moveFromTop {
-	from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
-}
-
-@-webkit-keyframes moveToBottom {
-	from { }
-	to { -webkit-transform: translateY(100%); }
-}
-@keyframes moveToBottom {
-	from { }
-	to { -webkit-transform: translateY(100%); transform: translateY(100%); }
-}
-
-@-webkit-keyframes moveFromBottom {
-	from { -webkit-transform: translateY(100%); }
-}
-@keyframes moveFromBottom {
-	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
-}
 
 /* Page Transtion animation delay classes */

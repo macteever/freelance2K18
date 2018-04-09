@@ -1,7 +1,10 @@
 (function ($, root, undefined) {
 
-		$(document).ready(function(){
+	$(document).ready(function(){
 
+	// PAGE LOADER
+		$(".page-loader").slideToggle(700,'swing');
+		
    // RESIZE HEADER SCROLLTOP
 
     $(window).scroll(function(){
@@ -17,12 +20,6 @@
 				$menu_cta.css({"-webkit-transform":"translateY(80px)"});
       }
     });
-
-	 // PAGE LOADER
-
-	 $(document).ready(function(){
-		  $(".page-loader").slideToggle(700,'swing');
-	  });
 
 	 // CALL BACK Menu
 

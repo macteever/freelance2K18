@@ -8,7 +8,7 @@
 			<div class="container h-100">
 				<div class="row align-items-center h-100">
 					<div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto page-intro">
-						<h1 class="roboto-slab fs-72 fw-700 mt-0 mb-50"><?php the_sub_field('title'); ?></h1>
+						<h1 class="roboto-slab fs-72 lh-72 fw-700 mt-0 mb-50"><?php the_sub_field('title'); ?></h1>
 						<div class="ubuntu fs-18 lh-24">
 							<?php the_sub_field('headline'); ?>
 						</div>
@@ -55,7 +55,10 @@
 					<div class="fs-17 lh-24 text-grey ubuntu web-first-part-content">
 						<?php the_sub_field('content'); ?>
 					</div>
-					<img class="zi-9 hidden-sm" src="<?php echo get_template_directory_uri(); ?>/assets/img/webmaster-creation-site-internet-bordeaux-poitiers-nicolas-metivier4.png" alt="" />
+					<?php
+					$img_large = get_field('img_large');
+					 ?>
+					<img class="zi-9 hidden-sm" src="<?php echo $img_large['url']; ?>" alt="<?php echo $img_large['alt']; ?>" title="<?php echo $img_large['title']; ?>"/>
 				</div>
 			</div>
 
@@ -67,7 +70,7 @@
 		<div class="container hidden-sm">
 			<div class="row mb-50">
 				<div class="ml-auto col-xl-11 col-lg-11 col-md-1 col-12 pl-0 web-etapes-title">
-					<h3 class="roboto-slab fs-42 ls-1">Les étapes</h3>
+					<!-- <h3 class="roboto-slab fs-42 ls-1">Les étapes</h3> -->
 				</div>
 			</div>
 		</div>
@@ -82,7 +85,7 @@
 			<div class="row zi-999 web-slider-headlines">
 				<div class="mx-auto pl-0 col-xl-10 col-lg-10 col-md-10 col-12 <?php the_sub_field('title'); ?> web-slider-title d-flex zi-999 ">
 					<span class="roboto-slab fw-700 fs-150 text-gold"><?php the_sub_field('number'); ?></span>
-					<h3 class="ubuntu fw-300 fs-90 lowercase ml-30 mr-30"><?php the_sub_field('title'); ?></h3>
+					<h2 class="ubuntu fw-300 fs-90 lowercase ml-30 mr-30"><?php the_sub_field('title'); ?></h2>
 				</div>
 			</div>
 		</div>
@@ -108,7 +111,7 @@
 						?>
 						<div>
 							<div class="ubuntu fs-17 lh-24 web-slider-content">
-								<h3 class="roboto-slab fw-700 fs-36 ls-2"><?php the_sub_field('subtitle_web_slide'); ?></h3>
+								<div class="roboto-slab fw-700 fs-36 ls-2"><?php the_sub_field('subtitle_web_slide'); ?></div>
 								<?php the_sub_field('content_web_slide'); ?>
 							</div>
 						</div>

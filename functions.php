@@ -472,12 +472,12 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 function create_post_type_html5()
 {
     // register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('taxonomy-projets', 'projet');
-    register_post_type('projet', // Register Custom Post Type
+    register_taxonomy_for_object_type('taxonomy-projets', 'projets');
+    register_post_type('projets', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('Projet', 'custom-theme'), // Rename these to suit
-            'singular_name' => __('Projet', 'custom-theme'),
+            'name' => __('Projets', 'custom-theme'), // Rename these to suit
+            'singular_name' => __('Projets', 'custom-theme'),
             'add_new' => __('Add New', 'custom-theme'),
             'add_new_item' => __('Add New Projet', 'custom-theme'),
             'edit' => __('Edit', 'custom-theme'),
@@ -486,8 +486,8 @@ function create_post_type_html5()
             'view' => __('View Projet', 'custom-theme'),
             'view_item' => __('View Projet', 'custom-theme'),
             'search_items' => __('Search Projet', 'custom-theme'),
-            'not_found' => __('No Projets found', 'custom-theme'),
-            'not_found_in_trash' => __('No Projets found in Trash', 'custom-theme')
+            'not_found' => __('No Projet found', 'custom-theme'),
+            'not_found_in_trash' => __('Projet Not found in Trash', 'custom-theme')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -500,8 +500,7 @@ function create_post_type_html5()
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
-            'post_tag',
-            'category'
+            'post_tag'
         ) // Add Category and Post Tags support
     )
   );
@@ -529,6 +528,7 @@ function create_post_type_html5()
       )
   );
 }
+
 
 /*------------------------------------*\
 	ShortCode Functions

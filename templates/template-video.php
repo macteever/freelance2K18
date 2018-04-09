@@ -33,7 +33,7 @@
                 <div class="row video-content">
                    <div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto d-flex video-content-child">
                      <div class="col-xl-6 col-lg-6 col-md-6 col-12 pl-0">
-                        <h2 class="roboto uppercase fs-32 ls-6 mb-20 text-white"><?php the_sub_field('subtitle'); ?></h2>
+                        <div class="roboto uppercase fs-20 ls-6 mb-20 text-white"><?php the_sub_field('subtitle'); ?></div>
                         <div class="ubuntu fs-17 lh-24 text-white">
                            <?php the_sub_field('content'); ?>
                         </div>
