@@ -914,6 +914,9 @@ ul#menu-web-submenu li a{
 .creation-de-logo h1{
 	margin-bottom: 30px!important;
 }
+.logo-content h2{
+	line-height: 62px;
+}
 /* partie projets */
 .creation-de-logo .logo-projets img{
 	position: absolute;
@@ -1196,6 +1199,7 @@ font-family: 'Ubuntu', sans-serif;
 	}
 	.logo-content h2{
 		font-size: 56px;
+		line-height: 58px;
 	}
 	.logo-content p{
 		font-size: 16px;
