@@ -32,7 +32,7 @@
             ?>
             <div class="row mt-150 mb-250 logo-content align-items-end justify-content-around">
                <div class="col-xl-5 col-lg-5 col-md-12 col-12 zi-99">
-                  <div class="roboto-slab fs-66 fw-700 ls-1"><?php the_sub_field('subtitle'); ?></div>
+                  <div class="roboto-slab fs-66 fw-700 ls-1 mb-30"><?php the_sub_field('subtitle'); ?></div>
                   <div class="ubuntu fs-17 lh-24 mt-20 ">
                      <?php the_sub_field('content'); ?>
                   </div>
@@ -61,19 +61,19 @@
             </div>
             <div class="row">
                <div class="col-xl-9 col-lg-9 col-md-12 col-12 mx-auto">
-                  <?php $args = array(
-                     'posts_per_page'   => 4,
-                     'post_type'        => 'projets',
-                     'category'         => 'logo',
-                     'category_name'    => 'logo',
-                     'orderby'          => 'date',
-                     'order'            => 'DESC',
-                     'post_status'      => 'publish',
-                     'suppress_filters' => true
-                  );
-
-                  $myposts = get_posts( $args );
-
+               <?php
+               $myposts = get_posts(array(
+                   'showposts' => 4,
+                   'post_type' => 'projets',
+                   'orderby'  => 'name',
+                   'order'     => 'DESC',
+                   'tax_query' => array(
+                       array(
+                       'taxonomy' => 'taxonomy-projets',
+                       'field' => 'slug',
+                       'terms' => array('creation-de-logo'))
+                   ))
+               );
                   foreach ( $myposts as $post ) : setup_postdata( $post );
                   ?>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-12 float-left mt-15 mb-15">
@@ -83,17 +83,20 @@
                      </a>
                   </div>
                   <?php
-               endforeach;
-               ?>
-               <?php wp_reset_postdata();
-               ?>
+                  endforeach;
+                  ?>
+                  <?php wp_reset_postdata();
+                  ?>
+               </div>
             </div>
-         </div>
-         <div class="row">
             <div class="col-xl-9 col-lg-9 col-md-12 col-12 mx-auto roboto fs-17 ls-1 pr-15 mt-30 text-right link-category-logo">
                <a class="pr-15" href="<?php echo get_site_url(); ?>/taxonomy-projets/creation-de-logo/">Voir tout les projets</a>
             </div>
          </div>
+      </div>
+      <!-- DIV TEST -->
+      <div class="container">
+
       </div>
 </main>
 <!-- /container-fluid -->

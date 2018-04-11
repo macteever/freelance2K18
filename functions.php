@@ -109,9 +109,6 @@ function custom_scripts(){
 
         wp_register_script('fullpage', get_template_directory_uri() . '/assets/js/lib/jquery.fullpage.min.js', array('jquery'), false, false); // Custom scripts
         wp_enqueue_script('fullpage'); // Enqueue it!
-
-        // wp_register_script('pagetransitions', get_template_directory_uri() . '/assets/js/lib/pagetransitions.js', array('jquery'), false, false); // Custom scripts
-        // wp_enqueue_script('pagetransitions'); // Enqueue it!
     }
 }
 

@@ -1048,6 +1048,24 @@ footer{
 .callBackMenu{
 	transform: translateY(0px)!important;
 }
+/*********** SINGLE PROJET **********/
+
+.visuel-projet{
+	object-fit: cover;
+	width: 100%;
+	height: 450px;
+}
+.posts-pagination:before.posts-pagination:after{
+	content: '';
+	width: 12%;
+	height: 1px;
+	background-color: #313131;
+	display: inline-block;
+ 	position: absolute;
+ 	left: 0px;
+	top: 85%
+}
+
 
 /*********** PAGE 404 *************/
 
