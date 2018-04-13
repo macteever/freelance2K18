@@ -74,7 +74,7 @@
                        'terms' => array('creation-de-logo'))
                    ))
                );
-                  foreach ( $myposts as $post ) : setup_postdata( $post );
+                     foreach ( $myposts as $post ) : setup_postdata( $post );
                   ?>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-12 float-left mt-15 mb-15">
                      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">

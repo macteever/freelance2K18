@@ -166,7 +166,7 @@ strong{
 
 .uppercase{text-transform: uppercase!important;}
 .lowercase{text-transform: lowercase!important;}
-
+.italic{font-style: italic!important;}
 .btn-grey{
 	font-family: 'ubuntu';
 	font-size: 16px;
@@ -1065,7 +1065,9 @@ footer{
  	left: 0px;
 	top: 85%
 }
-
+.content-projet:nth-child(even){
+	text-align: right;
+}
 
 /*********** PAGE 404 *************/
 
@@ -1254,7 +1256,8 @@ font-family: 'Ubuntu', sans-serif;
 	.about-container2 img{
 		margin-top: 80px;
 	}
-	/* CONTACT */
+	/* SINGLE PROJET */
+
 }
 @media only screen and (min-width:768px) {
 	.page-template-template-web .menu-cta, .page-template-template-video .menu-cta{
@@ -1566,6 +1569,18 @@ font-family: 'Ubuntu', sans-serif;
 	.nav-mobile .row{
 		margin-left: 0px;
 	}
+	/* SINGLE PROJETS */
+	.type-projets h1{
+		font-size: 52px;
+	}
+	.custom-post-details{
+		display: block!important;
+	}
+	.custom-post-details .date, .custom-post-details .author, .custom-post-details .category{
+		font-size: 15px!important;
+	}
+	/* ARCHIVE PROJETS */
+	
 
 }
 @media only screen and (max-width:320px) {
