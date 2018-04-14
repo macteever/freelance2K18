@@ -2,16 +2,17 @@
 
 	<main role="main">
 		<!-- section -->
-		<div class="container-fluid" id="page-404" style="background: 
-		-webkit-linear-gradient( 90deg, rgb(234,234,234) 0%, rgba(234,234,234,0.96) 12%, rgba(234,234,234,0.9) 32%, rgba(234,234,234,0.74902) 83%, rgba(234,234,234,0.74902) 100%),
-		url('<?=get_template_directory_uri().'/assets/img/sportiforme-coach-sportif-domicile.jpg'?>'); background-size: cover;">
-			<section class=" text-center">
-
-				<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
-				<h2>
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
-				</h2>
-			</section>
+		<div class="container-fluid" id="page-404">
+			<div class="container">
+				<section class="row align-items-center">
+					<div class="col-xl-8 col-lg-8 col-md-10 col-12 mx-auto text-center">
+						<h1 class="roboto-slab fs-44 text-center"><?php _e( 'Page not found', 'html5blank' ); ?></h1>
+						<h2 class="roboto fs-20 text-center">
+							<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
+						</h2>
+					</div>
+				</section>
+			</div>
 		</div>
 	</main>
 

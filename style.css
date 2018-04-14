@@ -1109,8 +1109,12 @@ footer{
 /*********** PAGE 404 *************/
 
 #page-404 section{
-	margin-top: 350px;
-	margin-bottom: 350px;
+	height: calc(100vh - 50px);
+}
+#page-404 h2{
+	display: inline-block;
+	border: solid 1px #313131;
+	padding: 12px 25px;
 }
 
 /*------------------------------------*\
@@ -1639,6 +1643,13 @@ font-family: 'Ubuntu', sans-serif;
 	/* ARCHIVE PROJETS */
 	.row-templt-projets{
 		margin-top: 50px;
+	}
+	/* 404 */
+	#page-404 h1{
+		font-size: 30px;
+	}
+	#page-404 h2{
+		font-size: 16px;
 	}
 
 }
