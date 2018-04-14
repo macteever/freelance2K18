@@ -2,40 +2,12 @@
 
 	<main role="main">
 		<!-- section -->
-		<section class="container mt-150">
-
-			<h1 class=""><?php the_title(); ?></h1>
-
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
+		<section class="container pt-150">
 			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+			<article class="col-xl-8 col-lg-8 col-md-10 col-12 mx-auto">
+				<h1 class="fs-52 roboto-slab fw-700"><?php the_title(); ?></h1>
 				<?php the_content(); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
 			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else: ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
 		</section>
 		<!-- /section -->
 	</main>
