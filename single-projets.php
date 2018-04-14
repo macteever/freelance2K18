@@ -10,7 +10,7 @@
 						<div class="col-xl-10 col-lg-10 col-md-10 col-12 mx-auto">
 							<h1 class="roboto-slab fw-700 fs-60 ls-1 mb-20"><?php the_title(); ?></h1>
 							<div class="custom-post-details d-flex mb-20">
-								<span class="roboto fs-17 date"> Posté le <?php the_time('j F Y'); ?> | </span>
+								<span class="roboto fs-17 date">le <?php the_time('j F Y'); ?> | </span>
 								<span class="roboto fs-17 author ml-5"> <?php _e( ' par', 'html5blank' ); ?> <strong><?php the_author(); ?></strong></span>
 								<div class="roboto fs-16 category ml-auto">
 									<?php $term_list = wp_get_post_terms($post->ID, 'taxonomy-projets', array("fields" => "all"));

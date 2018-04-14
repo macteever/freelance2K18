@@ -89,7 +89,7 @@
                   ?>
                </div>
             </div>
-            <div class="col-xl-9 col-lg-9 col-md-12 col-12 mx-auto roboto fs-17 ls-1 pr-15 mt-30 text-right link-category-logo">
+            <div class="col-xl-9 col-lg-9 col-md-12 col-12 mx-auto roboto fs-17 pr-15 mt-30 text-right link-category-logo">
                <a class="pr-15" href="<?php echo get_site_url(); ?>/taxonomy-projets/creation-de-logo/">Voir tout les projets</a>
             </div>
          </div>

@@ -70,7 +70,6 @@
 		<div class="container hidden-sm">
 			<div class="row mb-50">
 				<div class="ml-auto col-xl-11 col-lg-11 col-md-1 col-12 pl-0 web-etapes-title">
-					<!-- <h3 class="roboto-slab fs-42 ls-1">Les étapes</h3> -->
 				</div>
 			</div>
 		</div>

@@ -432,8 +432,9 @@ strong{
 }
 .nav-mobile ul li a{
 	color: #3D3D3D;
-	font-size: 24px;
+	font-size: 28px;
 	text-decoration: none;
+	font-weight: 700;
 }
 
 button {
@@ -1068,6 +1069,42 @@ footer{
 .content-projet:nth-child(even){
 	text-align: right;
 }
+/************ ARCHIVE PROJET **********/
+.tmplt-projets{
+	overflow: hidden;
+}
+.tmplt-projets-title::after{
+	content: '';
+    width: 50%;
+    height: 1px;
+    background-color: #313131;
+    display: block;
+    position: absolute;
+    top: 260px;
+    right: 0px;
+}
+.row-templt-projets:nth-child(odd){
+	flex-direction: row-reverse!important;
+}
+.row-templt-projets:nth-child(2n) .tmplt-projets-date{
+	 position: absolute;
+    right: -15px;
+    transform: rotate(-90deg);
+    top: 10px;
+}
+.row-templt-projets:nth-child(2n+1) .tmplt-projets-date{
+	 position: absolute;
+    left: -15px;
+    transform: rotate(-90deg);
+    top: 10px;
+}
+
+
+.tmplt-projet-thumbnail{
+	-webkit-box-shadow: -1px 17px 63px 2px rgba(204,204,204,1);
+	-moz-box-shadow: -1px 17px 63px 2px rgba(204,204,204,1);
+	box-shadow: -1px 17px 63px 2px rgba(204,204,204,1);
+}
 
 /*********** PAGE 404 *************/
 
@@ -1256,7 +1293,10 @@ font-family: 'Ubuntu', sans-serif;
 	.about-container2 img{
 		margin-top: 80px;
 	}
-	/* SINGLE PROJET */
+	/* ARCHIVE PROJET */
+	.tmplt-projets-title::after{
+		width: 40%;
+	}
 
 }
 @media only screen and (min-width:768px) {
@@ -1264,7 +1304,7 @@ font-family: 'Ubuntu', sans-serif;
 		display: none;
 	}
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
 	.hidden-xs{display: none!important;}
 	.responsive #menu-burger-menu{padding-left: 0px;}
 	.no-flex{display: block!important;}
@@ -1297,7 +1337,15 @@ font-family: 'Ubuntu', sans-serif;
 	}
 	#menu-nav-mobile{padding-left: 0px; margin-top: calc(50vh - 460px / 2 );}
 	.nav-mobile ul li{line-height: 50px;}
-	.nav-mobile ul li a{font-size: 24px;}
+	.nav-mobile ul li a{font-size: 32px;}
+	.nav-mobile ul li a:hover{
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		transition: all 300ms ease-out;
+		text-decoration: line-through!important;
+	}
 	.main-navigation-zone ul li{ margin-right: 15px;}
 	#menu-btn:before{
 		height: 45px;
@@ -1461,9 +1509,17 @@ font-family: 'Ubuntu', sans-serif;
 	.menu-open span{
 		color: #3D3D3D!important;
 	}
+	/* ARCHIVE PROJET */
+	.tmplt-projets-title h1{
+		font-size: 52px;
+	}
+	.tmplt-projets-title::after{
+		display: none;
+	}
 }
 
 @media only screen and (max-width:580px) {
+	.nav-mobile ul li a{font-size: 28px;}
 	/* HEADER */
 	.main-navigation-zone{
 		display: none!important;
@@ -1567,7 +1623,8 @@ font-family: 'Ubuntu', sans-serif;
 	}
 	/* MENU OPEN */
 	.nav-mobile .row{
-		margin-left: 0px;
+		margin-left: 0px!important;
+		margin-right: 0px!important;
 	}
 	/* SINGLE PROJETS */
 	.type-projets h1{
@@ -1580,10 +1637,15 @@ font-family: 'Ubuntu', sans-serif;
 		font-size: 15px!important;
 	}
 	/* ARCHIVE PROJETS */
-	
+	.row-templt-projets{
+		margin-top: 50px;
+	}
 
 }
 @media only screen and (max-width:320px) {
+	ul#menu-menu-mobile {
+    padding-left: 15px;
+	}
 	/* Home */
 	.home-part-cta{
 		font-size: 16px;
